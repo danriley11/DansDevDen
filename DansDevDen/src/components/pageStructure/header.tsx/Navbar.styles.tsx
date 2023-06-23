@@ -13,3 +13,7 @@ export const NavbarContainer = styled.div`
     align-self: center;
   }
 `;
+
+export const LogoContainer = styled.div`
+  cursor: pointer;
+`;

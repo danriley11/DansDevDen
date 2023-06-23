@@ -1,12 +1,36 @@
 import './App.css';
-import { Container } from './components/pageStructure/Container.styles';
-import { Navbar } from './components/pageStructure/header.tsx/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { GRAND_FOYER, HOUSEKEEPING } from './routes/routes';
+import { Suspense, lazy } from 'react';
+import DefaultRouteWrapper from './routes/RouteWrappers';
+
+const GrandFoyer = lazy(() => import('./pages/grandFoyer/GrandFoyer'));
+const Housekeeping = lazy(() => import('./pages/housekeeping/Housekeeping'));
 
 function App() {
   return (
-    <Container>
-      <Navbar />
-    </Container>
+    <Router>
+      <Suspense fallback={''}>
+        <Routes>
+          <Route
+            path={GRAND_FOYER}
+            element={
+              <DefaultRouteWrapper>
+                <GrandFoyer />
+              </DefaultRouteWrapper>
+            }
+          />
+          <Route
+            path={HOUSEKEEPING}
+            element={
+              <DefaultRouteWrapper>
+                <Housekeeping />
+              </DefaultRouteWrapper>
+            }
+          />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 
