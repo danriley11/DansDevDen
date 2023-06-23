@@ -1,12 +1,14 @@
 import { Heading1 } from '../../core/typography';
-import { Menu } from './Menu';
 import { NavbarContainer } from './Navbar.styles';
+import NavigationMenu from './Navigation-Menu';
 
 export const Navbar = () => {
   return (
-    <NavbarContainer>
-      <Heading1>Dans Dev Den</Heading1>
-      <Menu />
-    </NavbarContainer>
+    <>
+      <NavbarContainer>
+        <Heading1>Dans Dev Den</Heading1>
+        <NavigationMenu />
+      </NavbarContainer>
+    </>
   );
 };
