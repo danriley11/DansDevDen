@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { Container } from '../components/pageStructure/Container.styles';
 import { Navbar } from '../components/pageStructure/header.tsx/Navbar';
 
 type RouteWrapperProps = {
@@ -7,10 +6,10 @@ type RouteWrapperProps = {
 };
 const DefaultRouteWrapper = ({ children }: RouteWrapperProps) => {
   return (
-    <>
+    <div>
       <Navbar />
-      <Container>{children}</Container>
-    </>
+      {children}
+    </div>
   );
 };
 
