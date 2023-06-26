@@ -13,7 +13,7 @@ export const MenuIconContainer = styled.a`
 const MenuIconBar = styled.span`
   height: ${rem(3)};
   width: 100%;
-  background-color: black;
+  background-color: white;
   transition: all 100ms ease-in-out;
 `;
 

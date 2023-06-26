@@ -7,10 +7,10 @@ type RouteWrapperProps = {
 };
 const DefaultRouteWrapper = ({ children }: RouteWrapperProps) => {
   return (
-    <Container>
+    <>
       <Navbar />
-      {children}
-    </Container>
+      <Container>{children}</Container>
+    </>
   );
 };
 
