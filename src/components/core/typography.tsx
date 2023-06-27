@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { rem } from './styles';
+import { deepGreen } from './colours';
 
 export const fontFamily = `'League Spartan', sans-serif`;
 
@@ -41,6 +42,7 @@ export const Heading1 = styled.h1`
   font-weight: ${weights.semiBold};
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
+  color: ${deepGreen};
 `;
 
 export const Heading2 = styled.h2`
@@ -48,6 +50,7 @@ export const Heading2 = styled.h2`
   font-weight: ${weights.semiBold};
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
+  color: ${deepGreen};
 `;
 
 export const Heading3 = styled.h3`
@@ -55,6 +58,7 @@ export const Heading3 = styled.h3`
   font-weight: ${weights.semiBold};
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
+  color: ${deepGreen};
 `;
 
 export const Heading4 = styled.h4`
@@ -62,6 +66,7 @@ export const Heading4 = styled.h4`
   font-weight: ${weights.semiBold};
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
+  color: ${deepGreen};
 `;
 
 export const P = styled.p`
