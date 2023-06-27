@@ -1,8 +1,7 @@
 import { styled } from 'styled-components';
 import { Heading2 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-import { darkGrey, deepGreen, offWhite, softGrey } from '../../components/core/colours';
-// import GrandFoyerImage from '../../assets/GrandFoyer.jpeg';
+import { darkGrey, deepGreen, lightGrey, offWhite, softGrey } from '../../components/core/colours';
 
 export const GrandFoyerContainer = styled.div`
   background-image: url('../../assets/GrandFoyer.jpeg');
@@ -11,6 +10,10 @@ export const GrandFoyerContainer = styled.div`
 export const GrandFoyerHeadingContainer = styled.div`
   position: absolute;
   top: 0;
+  left: 10%;
+  background-color: ${lightGrey};
+  border-radius: 24px;
+  padding: 64px;
 
   ${mediaUp.xs`
     margin: ${rem(64)} 0;
@@ -29,7 +32,7 @@ export const GrandFoyerHeadingContainer = styled.div`
   `};
 
   & > h2 {
-    margin-bottom: 0;
+    margin: 0;
 
     & + h2 {
       margin: 0;
