@@ -6,16 +6,11 @@ type HeroImageContainerProps = {
   minWidth?: number;
 };
 export const HeroImageContainer = styled.div<HeroImageContainerProps>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: static;
+  margin-top: -76px;
   z-index: ${GRAND_FOYER_HERO_IMAGE_Z_INDEX};
-  filter: brightness(80%);
+  overflow: hidden;
+  filter: brightness(90%);
 
   ${({ minWidth }) => minWidth && `min-width: ${rem(minWidth)}`}
-
-  & > img {
-    max-height: 800px;
-  }
 `;
