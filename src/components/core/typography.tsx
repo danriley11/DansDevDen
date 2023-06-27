@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rem } from './styles';
 import { deepGreen } from './colours';
 
-export const fontFamily = `'League Spartan', sans-serif`;
+export const fontFamily = `'League Spartan', arial, helvetica, sans-serif;`;
 
 export const fontWeightRegular = 400;
 export const fontWeightMedium = 500;
