@@ -7,7 +7,7 @@ type HeroImageContainerProps = {
 };
 export const HeroImageContainer = styled.div<HeroImageContainerProps>`
   position: static;
-  margin-top: -76px;
+  margin-top: ${rem(-76)};
   z-index: ${GRAND_FOYER_HERO_IMAGE_Z_INDEX};
   overflow: hidden;
   filter: brightness(80%);

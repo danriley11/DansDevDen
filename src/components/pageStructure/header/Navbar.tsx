@@ -12,8 +12,6 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      console.log('scrollTop', scrollTop);
-
       setIsScrolled(!!scrollTop);
     };
 

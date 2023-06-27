@@ -8,4 +8,5 @@ export const darkGreySolid = '#323232';
 export const offWhite = 'RGBA(249, 249, 249, 1)';
 
 export const emeraldGreen = `RGBA(80, 200, 120)`;
+export const irisGreen = `RGBA(89, 200, 126, 0.5)`;
 export const deepGreen = `RGBA(0, 85, 28)`;

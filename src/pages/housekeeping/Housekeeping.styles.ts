@@ -15,9 +15,9 @@ export const HousekeepingNavBacking = styled.div`
 export const HousekeepingHeader = styled(Heading1)`
   text-align: center;
   color: ${deepGreen};
-  font-size: 48px;
-  line-height: 48px;
-  margin-bottom: 64px;
+  font-size: ${rem(48)};
+  line-height: ${rem(48)};
+  margin-bottom: ${rem(64)};
 `;
 
 export const HousekeepingAlternatingDivContainer = styled.div`
@@ -25,8 +25,8 @@ export const HousekeepingAlternatingDivContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin: 24px;
-  column-gap: 24px;
+  margin: ${rem(24)};
+  column-gap: ${rem(24)};
 
   p {
     text-align: center;
@@ -34,8 +34,8 @@ export const HousekeepingAlternatingDivContainer = styled.div`
 
   h4 {
     text-align: center;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: ${rem(24)};
+    line-height: ${rem(24)};
   }
 
   li > p {

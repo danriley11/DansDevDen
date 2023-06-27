@@ -12,8 +12,8 @@ export const GrandFoyerHeadingContainer = styled.div`
   top: 0;
   left: 10%;
   background-color: ${lightGrey};
-  border-radius: 24px;
-  padding: 64px;
+  border-radius: ${rem(24)};
+  padding: ${rem(64)};
 
   ${mediaUp.xs`
     margin: ${rem(64)} 0;
@@ -46,21 +46,21 @@ export const GrandFoyerHeading = styled(Heading2)`
   color: white;
 
   ${mediaUp.xs`
-  width: 200px;
-  line-height: 24px;
-  font-size: 24px;
+  width: ${rem(200)};
+  line-height: ${rem(24)};
+  font-size: ${rem(24)};
   `}
 
   ${mediaUp.md`
-  width: 400px;
-  line-height: 48px;
-  font-size: 48px;
+  width: ${rem(400)};
+  line-height: ${rem(48)};
+  font-size: ${rem(48)};
   `}
 
   ${mediaUp.lg`
-  width: 600px;
-  line-height: 64px;
-  font-size: 64px;
+  width: ${rem(600)};
+  line-height: ${rem(64)};
+  font-size: ${rem(64)};
   `}
 `;
 
@@ -71,8 +71,8 @@ export const GrandFoyerContentContainer = styled.div<{ backgroundColour: string 
   h2 {
     color: ${deepGreen};
     text-align: center;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: ${rem(48)};
+    line-height: ${rem(48)};
   }
 
   & > div > div > h3 {
@@ -82,12 +82,13 @@ export const GrandFoyerContentContainer = styled.div<{ backgroundColour: string 
 
 export const GrandFoyerFlexContainer = styled.div`
   display: flex;
+  column-gap: ${rem(24)};
 
-  :first-child {
+  div:first-child {
     flex: 2;
-    padding-right: 24px;
   }
-  :nth-child(2) {
+
+  div:nth-child(2) {
     flex: 1;
   }
 `;
@@ -97,14 +98,14 @@ export const GrandFoyerSuiteContainer = styled.div`
 `;
 
 export const Zone = styled.div`
-  text-align: center;
-  max-width: 360px;
-  border: 1px solid ${darkGrey};
-  border-radius: 8px;
-  padding: 24px;
-  box-sizing: border-box;
   background-color: white;
-  margin: 16px;
+  text-align: center;
+  max-width: ${rem(360)};
+  border: 1px solid ${darkGrey};
+  border-radius: ${rem(8)};
+  padding: ${rem(24)};
+  box-sizing: border-box;
+  margin: ${rem(16)};
 
   p {
     margin-bottom: 0;
@@ -116,6 +117,6 @@ export const Zone = styled.div`
 
   & > img {
     border: 1px solid ${softGrey};
-    border-radius: 8px;
+    border-radius: ${rem(8)};
   }
 `;

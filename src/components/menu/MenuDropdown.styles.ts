@@ -17,7 +17,7 @@ export const MenuDropdownContainer = styled.div`
 `;
 
 export const MenuDropdownItem = styled.div`
-  padding: 8px 12px;
+  padding: ${rem(8)} ${rem(12)};
   cursor: pointer;
 
   &:hover {

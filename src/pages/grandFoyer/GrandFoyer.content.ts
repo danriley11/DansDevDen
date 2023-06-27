@@ -4,22 +4,23 @@ import ShowcasingImage from '../../assets/ShowcasingImage.webp';
 import ServicesImage from '../../assets/ServicesImage.jpg';
 import PlanningImage from '../../assets/PlanningImage.webp';
 import AboutMeImage from '../../assets/AboutMeImage.webp';
+import { HOUSEKEEPING } from '../../routes/routes';
 
 export const SPACE_INFO_CONTENT = {
   title: `What's this space really about?`,
   content: [
-    `This is a space I plan on making into a home for anyone and everyone who's
-            interested in programming and is unsure about how to get started.`,
-    `I want this space to become the very place people choose to begin their days for
-            inspiration or learning...`,
+    `This is a space which will be growing alongside me and my skills. It's a space I intend on using for blogging updates, providing learning options, showcasing personal projects, offering freelancing services, and so much more.`,
+    `Please note that this has only recently been launched and so is a very large work in progress with tonnes of content and features to come. If you're interested in finding out what's next or what's in the pipeline, I would love to introduce you to your first suite:`,
   ],
 };
 
 export const FLOOR_PLAN_CONTENT = {
-  title: `What's the floor plan?`,
+  title: `What's the best way around?`,
   content: [
-    `Looking for a more informative way around? Then click the button below for a birds-eye view of the space.`,
-    ` For more information on why I chose this website architecture, scroll down after clicking the button.`,
+    `If you're looking for a handy visual on seeing all the different spaces this home has to offer, then click the button below!`,
+    `I'm offering this handy visual aid as I can find it difficult navigating some websites and I really want to make this a home that's accessible and understandable by all.`,
+    // `Looking for a more informative way around? Then click the button below for a birds-eye view of the space.`,
+    // ` For more information on why I chose this website architecture, scroll down after clicking the button.`,
     // `A floor plan here, is a map of what's where from a birds-eye view.
     //     something I think more websites need to take into consideration when offering
     //     services, information, accessibility and other kin-like features. This belief of
@@ -27,38 +28,44 @@ export const FLOOR_PLAN_CONTENT = {
     //     it's communicated to be". It's very hard to know the capacity or potential of
     //     something without first watching it or reading/hearing about it.`,
   ],
-  buttonLabel: `Let's see the floor plan`,
+  buttonLabel: `Coming soon`,
 };
 
 export const ZONES_CONTENT = [
   {
-    title: 'Blogging (coming soon)',
+    title: 'Blogging suite (coming soon)',
     image: BloggingImage,
-    blurb: `I'll be giving regular updates on what I'm learning, working on and having trouble with regarding development, and may sometimes make personal entries to share a bit more about myself from time to time!`,
+    blurb: `Stay up to date with me as I give regular updates on what I'm learning, working on and having trouble with. This helps me stay accountable when working alone.`,
+    href: ``,
   },
   {
-    title: 'Learning (coming soon)',
+    title: 'Learning suite (coming soon)',
     image: LearningImage,
-    blurb: `If you're looking to learn then this is the place for you. In here, I'll set up structured learning gathered from my past, present and future learnings within the programming field. I'll also add in a "Random knowledge nugget" feature to allow you to land on a random page to help you learn or gain exposure to something new everyday!`,
+    blurb: `In here, I'll set up structured learning gathered from my past, present and future. There'll be readings, activities and "Random knowledge nugget(s)" to enhance your learning experience.`,
+    href: ``,
   },
   {
-    title: 'Showcasing (coming soon)',
+    title: 'Showcasing suite (coming soon)',
     image: ShowcasingImage,
-    blurb: `For those looking to find out what I've built, am building or am going to build, this is your call!`,
+    blurb: `A one-stop-shop for what I've built or am building. It's here in case you want to know what my growing skillset can do.`,
+    href: ``,
   },
   {
-    title: 'Services (coming soon)',
+    title: 'Services suite (coming soon)',
     image: ServicesImage,
-    blurb: `I love what I do and I want to share the magic of IT with the world, so in my spare time I'd like to offer a variety of services to help the community.`,
+    blurb: `I love what I do and I do what I love. It's important to me that I share the magic of IT with the world, so in my spare time I'd like to offer a variety of services to help the community.`,
+    href: ``,
   },
   {
-    title: 'Planning (coming soon)',
+    title: 'Planning suite (coming soon)',
     image: PlanningImage,
-    blurb: `A one-stop-shop to find out what features I'm working on and what I'm planning for!`,
+    blurb: `Jump in here if you're interested in finding out what I'm currently working on or what I will be working on.`,
+    href: ``,
   },
   {
-    title: 'About Dan (coming soon)',
+    title: 'Housekeepers lodging',
     image: AboutMeImage,
-    blurb: `Are you looking to know more about me and this space? Then look no further!`,
+    blurb: `Are you looking to know more about me and this space? Then click this way!`,
+    href: HOUSEKEEPING,
   },
 ];

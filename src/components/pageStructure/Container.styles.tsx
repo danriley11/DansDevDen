@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { mediaUp, rem } from '../core/styles';
 
 export const Container = styled.div`
-  min-width: 390px;
+  min-width: ${rem(390)};
 
   ${mediaUp.xs`
     margin: 0 ${rem(8)}
