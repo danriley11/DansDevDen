@@ -1,6 +1,6 @@
 import HeroImage from '../../components/images/HeroImage';
 
-import CoverImage from '../../assets/CoverImage.jpg';
+import CoverImage from '../../assets/GrandFoyer.jpeg';
 import {
   GrandFoyerFlexContainer,
   GrandFoyerHeading,
@@ -23,8 +23,8 @@ const GrandFoyer = () => {
       <Container>
         <GrandFoyerHeadingContainer>
           <GrandFoyerHeading>Hello, </GrandFoyerHeading>
-          <GrandFoyerHeading>and welcome to</GrandFoyerHeading>
-          <GrandFoyerHeading>Dans dev den.</GrandFoyerHeading>
+          <GrandFoyerHeading>welcome to the home</GrandFoyerHeading>
+          <GrandFoyerHeading>of my dev journey.</GrandFoyerHeading>
         </GrandFoyerHeadingContainer>
 
         <GrandFoyerContentContainer backgroundColour="white">

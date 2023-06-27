@@ -10,7 +10,7 @@ export const HeroImageContainer = styled.div<HeroImageContainerProps>`
   margin-top: -76px;
   z-index: ${GRAND_FOYER_HERO_IMAGE_Z_INDEX};
   overflow: hidden;
-  filter: brightness(90%);
+  filter: brightness(80%);
 
   ${({ minWidth }) => minWidth && `min-width: ${rem(minWidth)}`}
 `;

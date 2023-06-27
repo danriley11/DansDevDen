@@ -39,6 +39,9 @@ export const NavbarContainer = styled.div<NavbarContainerProps>`
 `;
 
 export const LogoContainer = styled.div`
-  color: white;
   cursor: pointer;
+
+  h1 {
+    color: white;
+  }
 `;
