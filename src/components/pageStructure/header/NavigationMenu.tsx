@@ -24,7 +24,11 @@ const NavigationMenu = () => {
 
       {isOpen && (
         <MenuDropdownContainer>
-          <MenuDropdownItem onClick={() => navigate(HOUSEKEEPING)}>
+          <MenuDropdownItem
+            onClick={() => {
+              toggleHamburger();
+              navigate(HOUSEKEEPING);
+            }}>
             <P>Housekeeping</P>
           </MenuDropdownItem>
         </MenuDropdownContainer>

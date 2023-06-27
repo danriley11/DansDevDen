@@ -1,5 +1,4 @@
 import HeroImage from '../../components/images/HeroImage';
-
 import CoverImage from '../../assets/GrandFoyer.jpeg';
 import {
   GrandFoyerFlexContainer,
@@ -10,12 +9,16 @@ import {
 } from './GrandFoyer.styles';
 import { Heading2, Heading3, Heading4, P } from '../../components/core/typography';
 import { Container } from '../../components/pageStructure/Container.styles';
-import { RightAlign } from '../../components/core/spacing';
+import { CenterAlign, Margin } from '../../components/core/spacing';
 import { FLOOR_PLAN_CONTENT, SPACE_INFO_CONTENT, ZONES_CONTENT } from './GrandFoyer.content';
 import { offWhite } from '../../components/core/colours';
 import FlexDiv from '../../components/blocks/FlexDiv';
+import { ButtonLink } from '../../components/buttons/Buttons.styles';
+import { HOUSEKEEPING } from '../../routes/routes';
+import { useNavigate } from 'react-router-dom';
 
 const GrandFoyer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <HeroImage imgSrc={CoverImage} alt={'temp'} width={'100%'} />
@@ -35,20 +38,21 @@ const GrandFoyer = () => {
               {SPACE_INFO_CONTENT.content.map((p) => (
                 <P>{p}</P>
               ))}
-              <P>
-                Please note that this is currently a large work in progress with many, many features
-                in the pipeline. If you're interested in finding out more about these features, I
-                would love to introduce you to my <a href="#">Planning suite</a>!
-              </P>
+              <CenterAlign>
+                <ButtonLink href={HOUSEKEEPING}>Planning suite</ButtonLink>
+              </CenterAlign>
             </div>
+
             <div>
               <Heading3>{FLOOR_PLAN_CONTENT.title}</Heading3>
-              {FLOOR_PLAN_CONTENT.content.map((p) => (
-                <P>{p}</P>
-              ))}
-              <RightAlign>
-                <button>{FLOOR_PLAN_CONTENT.buttonLabel}</button>
-              </RightAlign>
+              <Margin bottom={24}>
+                {FLOOR_PLAN_CONTENT.content.map((p) => (
+                  <P>{p}</P>
+                ))}
+              </Margin>
+              <CenterAlign>
+                <ButtonLink disabled>{FLOOR_PLAN_CONTENT.buttonLabel}</ButtonLink>
+              </CenterAlign>
             </div>
           </GrandFoyerFlexContainer>
         </GrandFoyerContentContainer>
@@ -56,10 +60,10 @@ const GrandFoyer = () => {
 
       <GrandFoyerContentContainer backgroundColour={offWhite}>
         <Container>
-          <Heading2>Den zones</Heading2>
+          <Heading2>Our available suites</Heading2>
           <FlexDiv>
             {ZONES_CONTENT.map((zone) => (
-              <Zone>
+              <Zone onClick={() => navigate(zone.href)}>
                 <Heading4>{zone.title}</Heading4>
                 <img src={zone.image} height={192} width={294} />
                 <P>{zone.blurb}</P>

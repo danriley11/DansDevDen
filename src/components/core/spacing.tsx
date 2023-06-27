@@ -48,6 +48,7 @@ export const SpaceBetween = styled.div<SpaceBetweenProps>`
 export const CenterAlign = styled.div`
   display: flex;
   justify-content: center;
+  text-align: center;
 `;
 
 export const RightAlign = styled.div`
