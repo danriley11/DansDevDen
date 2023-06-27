@@ -25,7 +25,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <NavbarContainer isScrolled={isScrolled}>
+    <NavbarContainer isScrolled={isScrolled} as="header">
       <LogoContainer onClick={() => navigate(GRAND_FOYER)}>
         <Heading1>Dans Dev Den</Heading1>
       </LogoContainer>
