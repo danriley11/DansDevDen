@@ -1,5 +1,9 @@
 export const softGrey = 'RGBA(0, 0, 0, 0.05)';
+export const softGreySolid = '#F9F9F9';
+export const lightGrey = 'RGBA(150, 150, 150, 0.5)';
+export const lightGreySolid = '#969696';
 export const darkGrey = `RGBA(0, 0, 0, 0.8)`;
+export const darkGreySolid = '#323232';
 
 export const offWhite = 'RGBA(249, 249, 249, 1)';
 

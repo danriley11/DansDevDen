@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { Navbar } from '../components/pageStructure/header.tsx/Navbar';
+import { Navbar } from '../components/pageStructure/header/Navbar';
+import Footer from '../components/pageStructure/footer/Footer';
 
 type RouteWrapperProps = {
   children: ReactNode;
@@ -9,6 +10,7 @@ const DefaultRouteWrapper = ({ children }: RouteWrapperProps) => {
     <div>
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 };
