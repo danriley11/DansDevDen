@@ -9,8 +9,6 @@ export const fontWeightMedium = 500;
 export const fontWeightSemiBold = 600;
 export const fontWeightBold = 700;
 
-type Alignments = 'left' | 'center' | 'right';
-
 const weights = {
   regular: fontWeightRegular,
   medium: fontWeightMedium,

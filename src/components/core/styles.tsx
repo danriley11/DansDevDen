@@ -1,4 +1,4 @@
-import { BaseThemedCssFunction, css, CSSObject } from 'styled-components';
+import { css } from 'styled-components';
 
 const pixelsPerRem = 16;
 
@@ -17,6 +17,7 @@ type MediaSizeObject = {
   lg: number;
   xl: number;
 };
+
 type MediaSize = keyof MediaSizeObject;
 
 export const mediaSizes: MediaSizeObject = {
@@ -28,17 +29,13 @@ export const mediaSizes: MediaSizeObject = {
 };
 
 type MediaFunctionObject = {
-  xs: BaseThemedCssFunction<CSSObject>;
-  sm: BaseThemedCssFunction<CSSObject>;
-  md: BaseThemedCssFunction<CSSObject>;
-  lg: BaseThemedCssFunction<CSSObject>;
-  xl: BaseThemedCssFunction<CSSObject>;
+  [key in MediaSize]: typeof css;
 };
 
 export const mediaUp: MediaFunctionObject = (Object.keys(mediaSizes) as MediaSize[]).reduce(
   (acc, label) => {
-    (acc as any)[label] = <Props extends CSSObject>(
-      ...args: [CSSObject | TemplateStringsArray, any]
+    (acc as any)[label] = <Props extends typeof css>(
+      ...args: [typeof css | TemplateStringsArray, any]
     ) => {
       return css<Props>`
         @media (min-width: ${mediaSizes[label]}px) {
