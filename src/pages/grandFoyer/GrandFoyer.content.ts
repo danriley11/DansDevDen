@@ -7,7 +7,7 @@ import AboutMeImage from '../../assets/AboutMeImage.webp';
 import { HOUSEKEEPING } from '../../routes/routes';
 
 export const SPACE_INFO_CONTENT = {
-  title: `What's this space really about?`,
+  title: `What is this space?`,
   content: [
     `This is a space which will be growing alongside me and my skills. It's a space I intend on using for blogging updates, providing learning options, showcasing personal projects, offering freelancing services, and so much more.`,
     `Please note that this has only recently been launched and so is a very large work in progress with tonnes of content and features to come. If you're interested in finding out what's next or what's in the pipeline, I would love to introduce you to your first suite:`,

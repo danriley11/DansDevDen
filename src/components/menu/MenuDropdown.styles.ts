@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { rem } from '../core/styles';
 import { MENU_DROPDOWN_Z_INDEX } from '../core/z-index';
-import { deepGreen, emeraldGreen, softGrey } from '../core/colours';
+import { deepGreen, emeraldGreen, softGrey, white } from '../core/colours';
 
 export const MenuDropdownContainer = styled.div`
   position: absolute;
@@ -22,6 +22,6 @@ export const MenuDropdownItem = styled.div`
 
   &:hover {
     background-color: ${deepGreen};
-    color: white;
+    color: ${white};
   }
 `;

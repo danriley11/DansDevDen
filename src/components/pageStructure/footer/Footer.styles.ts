@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import { lightGreySolid } from '../../core/colours';
+import { black, lightGreySolid } from '../../core/colours';
 import { rem } from '../../core/styles';
 
 export const FooterContainer = styled.div`
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: ${rem(128)};
-  background-color: black;
-  text-align: center;
+  background-color: ${black};
 
   p {
     color: ${lightGreySolid};
-    line-height: ${rem(104)};
   }
 `;

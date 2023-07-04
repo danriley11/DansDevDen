@@ -12,10 +12,10 @@ import { Container } from '../../components/pageStructure/Container.styles';
 import { CenterAlign, Margin } from '../../components/core/spacing';
 import { FLOOR_PLAN_CONTENT, SPACE_INFO_CONTENT, ZONES_CONTENT } from './GrandFoyer.content';
 import { offWhite } from '../../components/core/colours';
-import FlexDiv from '../../components/blocks/FlexDiv';
 import { ButtonLink } from '../../components/buttons/Buttons.styles';
 import { HOUSEKEEPING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
+import { FlexDivContainer } from '../../components/blocks/FlexDiv.styles';
 
 const GrandFoyer = () => {
   const navigate = useNavigate();
@@ -35,9 +35,11 @@ const GrandFoyer = () => {
           <GrandFoyerFlexContainer>
             <div>
               <Heading3>{SPACE_INFO_CONTENT.title}</Heading3>
-              {SPACE_INFO_CONTENT.content.map((p) => (
-                <P>{p}</P>
-              ))}
+              <Margin bottom={24}>
+                {SPACE_INFO_CONTENT.content.map((p) => (
+                  <P>{p}</P>
+                ))}
+              </Margin>
               <CenterAlign>
                 <ButtonLink href={HOUSEKEEPING}>Planning suite</ButtonLink>
               </CenterAlign>
@@ -61,15 +63,15 @@ const GrandFoyer = () => {
       <GrandFoyerContentContainer backgroundColour={offWhite}>
         <Container>
           <Heading2>Our available suites</Heading2>
-          <FlexDiv>
+          <FlexDivContainer flexDirection="row" justifyContent="space-evenly">
             {ZONES_CONTENT.map((zone) => (
               <Zone onClick={() => navigate(zone.href)}>
                 <Heading4>{zone.title}</Heading4>
-                <img src={zone.image} height={192} width={294} />
+                <img src={zone.image} />
                 <P>{zone.blurb}</P>
               </Zone>
             ))}
-          </FlexDiv>
+          </FlexDivContainer>
         </Container>
       </GrandFoyerContentContainer>
     </>

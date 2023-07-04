@@ -57,6 +57,7 @@ export const Heading3 = styled.h3`
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
   color: ${deepGreen};
+  margin: ${rem(24)} 0;
 `;
 
 export const Heading4 = styled.h4`
@@ -65,6 +66,7 @@ export const Heading4 = styled.h4`
   line-height: ${fontSize24LineHeight};
   font-family: ${fontFamily};
   color: ${deepGreen};
+  margin: ${rem(24)} 0;
 `;
 
 export const P = styled.p`
@@ -72,4 +74,5 @@ export const P = styled.p`
   font-family: ${fontFamily};
   font-weight: ${weights.regular};
   line-height: ${fontSize24};
+  max-width: fit-content;
 `;

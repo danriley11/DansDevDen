@@ -1,7 +1,14 @@
 import { styled } from 'styled-components';
 import { Heading2 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-import { darkGrey, deepGreen, lightGrey, offWhite, softGrey } from '../../components/core/colours';
+import {
+  darkGrey,
+  deepGreen,
+  lightGrey,
+  offWhite,
+  softGrey,
+  white,
+} from '../../components/core/colours';
 
 export const GrandFoyerContainer = styled.div`
   background-image: url('../../assets/GrandFoyer.jpeg');
@@ -16,19 +23,22 @@ export const GrandFoyerHeadingContainer = styled.div`
   padding: ${rem(64)};
 
   ${mediaUp.xs`
-    margin: ${rem(64)} 0;
+    margin: ${rem(90)} 0;
+    padding: ${rem(12)};
   `};
-
   ${mediaUp.sm`
-    margin: ${rem(64)} 0;
+    margin: ${rem(90)} 0;
+    padding: ${rem(24)};
   `};
 
   ${mediaUp.md`
     margin: ${rem(128)} 0;
+    padding: ${rem(64)};
   `};
 
   ${mediaUp.lg`
     margin: ${rem(192)} 0;
+    padding: ${rem(90)};
   `};
 
   & > h2 {
@@ -43,9 +53,9 @@ export const GrandFoyerHeadingContainer = styled.div`
 
 export const GrandFoyerHeading = styled(Heading2)`
   position: relative;
-  color: white;
+  color: ${white};
 
-  ${mediaUp.xs`
+  ${mediaUp.sm`
   width: ${rem(200)};
   line-height: ${rem(24)};
   font-size: ${rem(24)};
@@ -83,14 +93,25 @@ export const GrandFoyerContentContainer = styled.div<{ backgroundColour: string 
 export const GrandFoyerFlexContainer = styled.div`
   display: flex;
   column-gap: ${rem(24)};
+  flex-wrap: wrap;
 
   div:first-child {
-    flex: 2;
+    padding-bottom: ${rem(40)};
   }
 
   div:nth-child(2) {
     flex: 1;
   }
+
+  ${mediaUp.md`    
+      div:first-child {
+        flex: 2;
+      }
+    
+      div:nth-child(2) {
+        flex: 1;
+      }
+      `}
 `;
 
 export const GrandFoyerSuiteContainer = styled.div`
@@ -98,7 +119,7 @@ export const GrandFoyerSuiteContainer = styled.div`
 `;
 
 export const Zone = styled.div`
-  background-color: white;
+  background-color: ${white};
   text-align: center;
   max-width: ${rem(360)};
   border: 1px solid ${darkGrey};
@@ -118,5 +139,8 @@ export const Zone = styled.div`
   & > img {
     border: 1px solid ${softGrey};
     border-radius: ${rem(8)};
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
   }
 `;
