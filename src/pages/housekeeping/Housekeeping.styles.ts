@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { Heading1 } from '../../components/core/typography';
-import { rem } from '../../components/core/styles';
-import { deepGreen } from '../../components/core/colours';
+import { mediaUp, rem } from '../../components/core/styles';
+import { black, deepGreen } from '../../components/core/colours';
 
 export const HousekeepingNavBacking = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: ${black};
   height: ${rem(75)};
 `;
 
@@ -22,7 +22,7 @@ export const HousekeepingHeader = styled(Heading1)`
 
 export const HousekeepingAlternatingDivContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin: ${rem(24)};
@@ -47,7 +47,17 @@ export const HousekeepingAlternatingDivContainer = styled.div`
   }
 
   img {
-    width: 100%;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
   }
+
+  ${mediaUp.sm`
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   box-sizing: border-box;
+   margin: ${rem(24)};
+   column-gap: ${rem(24)};
+  `}
 `;
