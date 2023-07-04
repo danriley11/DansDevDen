@@ -2,21 +2,21 @@ import styled from 'styled-components';
 import { mediaUp, rem } from '../core/styles';
 
 export const Container = styled.div`
-  min-width: ${rem(390)};
+  box-sizing: border-box;
+  min-width: ${rem(370)};
 
   ${mediaUp.xs`
-    margin: 0 ${rem(8)}
+    padding: 0 ${rem(8)}
   `};
-
   ${mediaUp.sm`
-    margin: 0 ${rem(16)}
+    padding: 0 ${rem(16)};
   `};
 
   ${mediaUp.md`
-    margin: 0 ${rem(24)}
+    padding: 0 ${rem(24)}
   `};
 
   ${mediaUp.lg`
-    margin: 0 ${rem(40)}
+    padding: 0 ${rem(40)}
   `};
 `;
