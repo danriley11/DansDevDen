@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { rem } from '../core/styles';
+import { white } from '../core/colours';
 
 export const MenuIconContainer = styled.a`
   display: flex;
@@ -13,7 +14,7 @@ export const MenuIconContainer = styled.a`
 const MenuIconBar = styled.span`
   height: ${rem(3)};
   width: 100%;
-  background-color: white;
+  background-color: ${white};
   transition: all 100ms ease-in-out;
 `;
 

@@ -5,7 +5,9 @@ export const lightGreySolid = '#969696';
 export const darkGrey = `RGBA(0, 0, 0, 0.8)`;
 export const darkGreySolid = '#323232';
 
-export const offWhite = 'RGBA(249, 249, 249, 1)';
+export const white = 'RGBA(255, 255, 255, 1)';
+export const offWhite = 'RGBA(245, 245, 245, 1)';
+export const black = 'RGBA(0, 0, 0, 1)';
 
 export const emeraldGreen = `RGBA(80, 200, 120)`;
 export const irisGreen = `RGBA(89, 200, 126, 0.5)`;

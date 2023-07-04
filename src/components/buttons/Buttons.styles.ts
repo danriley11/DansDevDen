@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { darkGrey, deepGreen, emeraldGreen, lightGrey } from '../core/colours';
+import { black, darkGrey, deepGreen, emeraldGreen, lightGrey, white } from '../core/colours';
 import { rem } from '../core/styles';
 import { fontFamily, fontSize16, fontWeightSemiBold } from '../core/typography';
 
@@ -21,7 +21,7 @@ export const ButtonLink = styled.a<ButtonLinkProps>`
   font-weight: ${({ fontWeight = fontWeightSemiBold }) => fontWeight};
 
   &:hover {
-    color: white;
+    color: ${white};
     background-color: ${deepGreen};
   }
 
@@ -30,7 +30,7 @@ export const ButtonLink = styled.a<ButtonLinkProps>`
     css`
       color: ${darkGrey};
       background-color: ${lightGrey};
-      border: 1px solid black;
+      border: 1px solid ${black};
       pointer-events: none;
       text-decoration: line-through;
     `}

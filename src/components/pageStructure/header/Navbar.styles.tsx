@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkGrey, softGrey } from '../../core/colours';
+import { darkGrey, softGrey, white } from '../../core/colours';
 import { MENU_Z_INDEX } from '../../core/z-index';
 import { mediaUp, rem } from '../../core/styles';
 
@@ -21,19 +21,19 @@ export const NavbarContainer = styled.div<NavbarContainerProps>`
     align-self: center;
 
     ${mediaUp.xs`
-    margin: 0 ${rem(8)}
+    margin: 0 ${rem(8)};
   `};
 
     ${mediaUp.sm`
-    margin: 0 ${rem(16)}
+    margin: 0 ${rem(16)};
   `};
 
     ${mediaUp.md`
-    margin: 0 ${rem(24)}
+    margin: 0 ${rem(24)};
   `};
 
     ${mediaUp.lg`
-    margin: 0 ${rem(40)}
+    margin: 0 ${rem(40)};
   `};
   }
 `;
@@ -42,6 +42,6 @@ export const LogoContainer = styled.div`
   cursor: pointer;
 
   h1 {
-    color: white;
+    color: ${white};
   }
 `;
