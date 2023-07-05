@@ -1,4 +1,6 @@
-import AboutMeImage from '../../assets/AboutMeImage.webp';
+import MyReasonImage from '../../assets/MyReasonImage.jpg';
+import MyBackgroundImage from '../../assets/MyBackgroundImage.jpg';
+import MyTimeline from '../../assets/MyTimeline.jpg';
 
 export const HOUSEKEEPING_CONTENT = [
   {
@@ -11,7 +13,7 @@ export const HOUSEKEEPING_CONTENT = [
       `,
     ],
     list: null,
-    image: AboutMeImage,
+    image: MyReasonImage,
     imageAlt: `Temp alt`,
   },
   {
@@ -25,7 +27,7 @@ export const HOUSEKEEPING_CONTENT = [
       Now while I'm learning and growing this dream may change and it's worth noting that I'm most excited currently to work in a larger company to improve my skills, gain experience and expand my knowledge in ways I otherwise wouldn't have the opportunity for.`,
     ],
     list: null,
-    image: AboutMeImage,
+    image: MyBackgroundImage,
     imageAlt: `Temp alt`,
   },
   {
@@ -40,7 +42,7 @@ export const HOUSEKEEPING_CONTENT = [
       `Bogged down with the world through COVID.`,
       `Landed another contract role as a software engineer to then pivot into full-time at a proptech startup.`,
     ],
-    image: AboutMeImage,
+    image: MyTimeline,
     imageAlt: `Temp alt`,
   },
 ];
