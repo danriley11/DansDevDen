@@ -25,9 +25,8 @@ const GrandFoyer = () => {
 
       <Container>
         <GrandFoyerHeadingContainer>
-          <GrandFoyerHeading>Hello, </GrandFoyerHeading>
-          <GrandFoyerHeading>welcome to the home</GrandFoyerHeading>
-          <GrandFoyerHeading>of my dev journey.</GrandFoyerHeading>
+          <GrandFoyerHeading>Welcome to the home of my </GrandFoyerHeading>
+          <GrandFoyerHeading>developer journey</GrandFoyerHeading>
         </GrandFoyerHeadingContainer>
 
         <GrandFoyerContentContainer backgroundColour="white">
@@ -41,7 +40,9 @@ const GrandFoyer = () => {
                 ))}
               </Margin>
               <CenterAlign>
-                <ButtonLink href={HOUSEKEEPING}>Planning suite</ButtonLink>
+                <ButtonLink disabled href={HOUSEKEEPING}>
+                  Planning suite
+                </ButtonLink>
               </CenterAlign>
             </div>
 

@@ -48,8 +48,6 @@ export const HousekeepingAlternatingDivContainer = styled.div`
 
   img {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
   }
 
   ${mediaUp.sm`
@@ -60,4 +58,12 @@ export const HousekeepingAlternatingDivContainer = styled.div`
    margin: ${rem(24)};
    column-gap: ${rem(24)};
   `}
+`;
+
+export const HousekeepingContentContainer = styled.div`
+  h4 {
+    text-align: center;
+    font-size: ${rem(24)};
+    line-height: ${rem(24)};
+  }
 `;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { css } from 'styled-components';
 
 const pixelsPerRem = 16;
