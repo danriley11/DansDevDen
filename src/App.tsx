@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { GRAND_FOYER, HOUSEKEEPING } from './routes/routes';
+import { GRAND_FOYER, HOUSEKEEPING, SHOWCASING } from './routes/routes';
 import { Suspense, lazy } from 'react';
 import DefaultRouteWrapper from './routes/RouteWrappers';
+import ShowcasingSuite from './pages/showcasingSuite/ShowcasingSuite';
 
 const GrandFoyer = lazy(() => import('./pages/grandFoyer/GrandFoyer'));
-const Housekeeping = lazy(() => import('./pages/housekeeping/Housekeeping'));
+const Housekeeping = lazy(() => import('./pages/housekeepersLodge/HousekeepersLodge'));
 
 function App() {
   return (
@@ -25,6 +26,14 @@ function App() {
             element={
               <DefaultRouteWrapper>
                 <Housekeeping />
+              </DefaultRouteWrapper>
+            }
+          />
+          <Route
+            path={SHOWCASING}
+            element={
+              <DefaultRouteWrapper>
+                <ShowcasingSuite />
               </DefaultRouteWrapper>
             }
           />

@@ -4,7 +4,7 @@ import { IsTablet, LargerThanTablet } from '../../components/screenSize/ScreenSi
 import {
   HousekeepingAlternatingDivContainer,
   HousekeepingContentContainer,
-} from './Housekeeping.styles';
+} from './HousekeepersLodge.styles';
 
 type HousekeepingContentProps = {
   title: string;
