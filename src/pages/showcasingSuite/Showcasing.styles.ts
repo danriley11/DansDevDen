@@ -37,6 +37,11 @@ export const ShowcasingBlockImg = styled.img`
 `;
 
 export const ShowcasingBlockContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+
   ${mediaUp.lg`
   h4 {
       margin-top: 0;
