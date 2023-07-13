@@ -1,12 +1,10 @@
-import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
-import { CenterAlign, Margin } from '../../components/core/spacing';
+import { Margin } from '../../components/core/spacing';
 import { Heading4, P } from '../../components/core/typography';
 import {
   ShowcasingBlockContent,
   ShowcasingBlockImg,
   ShowcasingContainer,
 } from './Showcasing.styles';
-import { Container } from '../../components/pageStructure/Container.styles';
 import { ButtonLink } from '../../components/buttons/Buttons.styles';
 
 type ShowcasingBlockProps = {
