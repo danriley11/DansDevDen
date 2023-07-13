@@ -15,7 +15,7 @@ import { offWhite } from '../../components/core/colours';
 import { ButtonLink } from '../../components/buttons/Buttons.styles';
 import { HOUSEKEEPING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
-import { FlexDivContainer } from '../../components/blocks/FlexDiv.styles';
+import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 
 const GrandFoyer = () => {
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ const GrandFoyer = () => {
       <GrandFoyerContentContainer backgroundColour={offWhite}>
         <Container>
           <Heading2>Our available suites</Heading2>
-          <FlexDivContainer flexDirection="row" justifyContent="space-evenly">
+          <FlexDiv flexDirection="row" justifyContent="space-evenly" hasHover>
             {ZONES_CONTENT.map((zone) => (
               <Zone onClick={() => navigate(zone.href)}>
                 <Heading4>{zone.title}</Heading4>
@@ -72,7 +72,7 @@ const GrandFoyer = () => {
                 <P>{zone.blurb}</P>
               </Zone>
             ))}
-          </FlexDivContainer>
+          </FlexDiv>
         </Container>
       </GrandFoyerContentContainer>
     </>

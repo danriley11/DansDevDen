@@ -1,20 +1,9 @@
 import styled from 'styled-components';
 import { Heading1 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-import { black, deepGreen } from '../../components/core/colours';
-
-export const HousekeepingNavBacking = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: ${black};
-  height: ${rem(75)};
-`;
 
 export const HousekeepingHeader = styled(Heading1)`
   text-align: center;
-  color: ${deepGreen};
   font-size: ${rem(48)};
   line-height: ${rem(48)};
   margin-bottom: ${rem(64)};

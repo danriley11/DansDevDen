@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkGrey, softGrey, white } from '../../core/colours';
+import { black, darkGrey, softGrey, white } from '../../core/colours';
 import { MENU_Z_INDEX } from '../../core/z-index';
 import { mediaUp, rem } from '../../core/styles';
 
@@ -44,4 +44,13 @@ export const LogoContainer = styled.div`
   h1 {
     color: ${white};
   }
+`;
+
+export const NavBacking = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: ${black};
+  height: ${rem(75)};
 `;

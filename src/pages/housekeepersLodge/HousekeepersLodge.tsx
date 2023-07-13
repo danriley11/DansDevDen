@@ -1,12 +1,13 @@
 import { Container } from '../../components/pageStructure/Container.styles';
-import { HousekeepingHeader, HousekeepingNavBacking } from './Housekeeping.styles';
+import { HousekeepingHeader } from './HousekeepersLodge.styles';
 import HousekeepingAlternatingDiv from './HousekeepingAlternatingDiv';
-import { HOUSEKEEPING_CONTENT } from './Housekeeping.content';
+import { HOUSEKEEPING_CONTENT } from './HousekeepersLodge.content';
+import { NavBacking } from '../../components/pageStructure/header/Navbar.styles';
 
-const Housekeeping = () => {
+const HousekeepersLodge = () => {
   return (
     <Container>
-      <HousekeepingNavBacking />
+      <NavBacking />
 
       <div>
         <HousekeepingHeader>About Me, Dan</HousekeepingHeader>
@@ -27,4 +28,4 @@ const Housekeeping = () => {
   );
 };
 
-export default Housekeeping;
+export default HousekeepersLodge;
