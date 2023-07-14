@@ -22,21 +22,19 @@ const ShowcasingBlock = ({
   previewImageAlt,
 }: ShowcasingBlockProps) => {
   return (
-    <Margin bottom={64}>
-      <ShowcasingContainer>
-        <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+    <ShowcasingContainer>
+      <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
 
-        <ShowcasingBlockContent>
-          <Heading4>{title}</Heading4>
-          <Margin bottom={40}>
-            <P>{description}</P>
-          </Margin>
-          <ButtonLink target="_blank" href={url}>
-            {title}
-          </ButtonLink>
-        </ShowcasingBlockContent>
-      </ShowcasingContainer>
-    </Margin>
+      <ShowcasingBlockContent>
+        <Heading4>{title}</Heading4>
+        <Margin bottom={40}>
+          <P>{description}</P>
+        </Margin>
+        <ButtonLink target="_blank" href={url}>
+          {title}
+        </ButtonLink>
+      </ShowcasingBlockContent>
+    </ShowcasingContainer>
   );
 };
 

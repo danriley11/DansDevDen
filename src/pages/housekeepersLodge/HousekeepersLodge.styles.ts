@@ -1,13 +1,5 @@
 import styled from 'styled-components';
-import { Heading1 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-
-export const HousekeepingHeader = styled(Heading1)`
-  text-align: center;
-  font-size: ${rem(48)};
-  line-height: ${rem(48)};
-  margin-bottom: ${rem(64)};
-`;
 
 export const HousekeepingAlternatingDivContainer = styled.div`
   display: flex;
