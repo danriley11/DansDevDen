@@ -13,7 +13,7 @@ import { CenterAlign, Margin } from '../../components/core/spacing';
 import { FLOOR_PLAN_CONTENT, SPACE_INFO_CONTENT, ZONES_CONTENT } from './GrandFoyer.content';
 import { offWhite } from '../../components/core/colours';
 import { ButtonLink } from '../../components/buttons/Buttons.styles';
-import { HOUSEKEEPING } from '../../routes/routes';
+import { PLANNING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 
@@ -40,9 +40,7 @@ const GrandFoyer = () => {
                 ))}
               </Margin>
               <CenterAlign>
-                <ButtonLink disabled href={HOUSEKEEPING}>
-                  Planning suite
-                </ButtonLink>
+                <ButtonLink href={PLANNING}>Planning suite</ButtonLink>
               </CenterAlign>
             </div>
 

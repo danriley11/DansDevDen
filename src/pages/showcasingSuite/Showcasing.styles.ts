@@ -1,19 +1,10 @@
 import styled from 'styled-components';
 import { mediaUp, rem } from '../../components/core/styles';
-import { Heading1 } from '../../components/core/typography';
-import { black, softGrey } from '../../components/core/colours';
-
-export const ShowcasingHeader = styled(Heading1)`
-  text-align: center;
-  font-size: ${rem(48)};
-  line-height: ${rem(48)};
-  margin-bottom: ${rem(64)};
-`;
+import { softGrey } from '../../components/core/colours';
 
 export const ShowcasingContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid ${black};
   border-radius: ${rem(8)};
   padding: ${rem(32)};
   text-align: center;
