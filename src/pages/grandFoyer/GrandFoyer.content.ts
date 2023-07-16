@@ -10,7 +10,8 @@ export const SPACE_INFO_CONTENT = {
   title: `What is this space?`,
   content: [
     `This is a space which will be growing alongside me and my skills. It's a space I intend on using for blogging updates, providing learnings, showcasing personal projects, offering freelancing services, and so much more.`,
-    `Please note that this has only recently been launched and so is a very large work in progress with tonnes of content and features to come. If you're interested in finding out what's next or what's in the pipeline, I would love to introduce you to your first suite:`,
+    `This is also a space I want to make feel as homely as possible, so the terminology and theme throughout will reflect that of a large home with a room for everyone, unique to what they're looking for.`,
+    `Please note: This space has only recently been launched and is a large work in progress with lots of content, design updates, animations and features to come. If you're interested in finding out what's in the pipeline, I would love to introduce you to your first suite:`,
   ],
 };
 
