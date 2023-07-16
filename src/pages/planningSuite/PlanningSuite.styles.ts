@@ -3,9 +3,8 @@ import { deepGreen, irisGreen, lightGrey, white } from '../../components/core/co
 
 export const GridContainer = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(7, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
-  gap: 8px;
+  gap: 16px;
 `;
 
 type GridItemProps = {
