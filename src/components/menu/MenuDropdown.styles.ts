@@ -9,7 +9,6 @@ export const MenuDropdownContainer = styled.div`
   top: 100%;
   z-index: ${MENU_DROPDOWN_Z_INDEX};
   width: ${rem(200)};
-  max-height: ${rem(200)};
   background-color: ${emeraldGreen};
   border: 1px solid ${softGrey};
   overflow-y: auto;

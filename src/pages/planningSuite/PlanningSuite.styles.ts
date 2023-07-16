@@ -3,9 +3,8 @@ import { deepGreen, irisGreen, lightGrey, white } from '../../components/core/co
 
 export const GridContainer = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(7, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
-  gap: 8px;
+  gap: 16px;
 `;
 
 type GridItemProps = {
@@ -18,7 +17,8 @@ export const GridItem = styled.div<GridItemProps>`
   align-content: center;
   justify-content: flex-start;
   border: 1px solid ${lightGrey};
-  width: 104px;
+  border-radius: 8px;
+  min-width: 104px;
   min-height: 104px;
   text-align: center;
   background-color: ${irisGreen};

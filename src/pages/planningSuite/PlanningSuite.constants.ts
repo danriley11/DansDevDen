@@ -17,7 +17,7 @@ export const JULY_PLANNING_GOALS = [
   //   10
   ['Labour'],
   //   11
-  [],
+  ['Design and plan Bespoke Designs by Sharon'],
   //   12
   ['Build & launch Bespoke Designs by Sharon'],
   //   13
@@ -27,10 +27,10 @@ export const JULY_PLANNING_GOALS = [
   [],
   [],
   //   17
-  ['Company position enquiries', 'Build a link preview for Dans Dev Den'],
-  [],
-  [],
-  [],
+  ['Company position enquiries'],
+  ['Labour'],
+  ['Add animation to GrandFoyer, Housekeeping, Showcasing'],
+  ['Build a link preview for Dans Dev Den'],
   [],
   [],
   [],
