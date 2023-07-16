@@ -18,7 +18,7 @@ export const GridItem = styled.div<GridItemProps>`
   justify-content: flex-start;
   border: 1px solid ${lightGrey};
   border-radius: 8px;
-  width: 104px;
+  min-width: 104px;
   min-height: 104px;
   text-align: center;
   background-color: ${irisGreen};
