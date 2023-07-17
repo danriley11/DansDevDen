@@ -40,7 +40,7 @@ const GrandFoyer = () => {
                 ))}
               </Margin>
               <CenterAlign>
-                <ButtonLink href={PLANNING}>Planning suite</ButtonLink>
+                <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink>
               </CenterAlign>
             </div>
 

@@ -7,7 +7,7 @@ type ButtonLinkProps = {
   fontWeight?: number;
   disabled?: boolean;
 };
-export const ButtonLink = styled.a<ButtonLinkProps>`
+export const ButtonLink = styled.button<ButtonLinkProps>`
   display: block;
   width: fit-content;
 
@@ -26,6 +26,7 @@ export const ButtonLink = styled.a<ButtonLinkProps>`
   &:hover {
     color: ${white};
     background-color: ${deepGreen};
+    cursor: pointer;
   }
 
   ${({ disabled = false }) =>
