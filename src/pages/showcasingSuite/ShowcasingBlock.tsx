@@ -5,7 +5,7 @@ import {
   ShowcasingBlockImg,
   ShowcasingContainer,
 } from './Showcasing.styles';
-import { ButtonLink } from '../../components/buttons/Buttons.styles';
+import ButtonTab from '../../components/buttons/ButtonTab';
 
 type ShowcasingBlockProps = {
   title: string;
@@ -30,9 +30,7 @@ const ShowcasingBlock = ({
         <Margin bottom={40}>
           <P>{description}</P>
         </Margin>
-        <ButtonLink target="_blank" href={url}>
-          {title}
-        </ButtonLink>
+        <ButtonTab url={url} buttonText={title} />
       </ShowcasingBlockContent>
     </ShowcasingContainer>
   );
