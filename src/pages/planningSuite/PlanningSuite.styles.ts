@@ -12,6 +12,8 @@ type GridItemProps = {
 };
 export const GridItem = styled.div<GridItemProps>`
   display: flex;
+  box-sizing: border-box;
+  padding: 0 8px;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
