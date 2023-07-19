@@ -6,6 +6,7 @@ import {
   ShowcasingContainer,
 } from './Showcasing.styles';
 import ButtonTab from '../../components/buttons/ButtonTab';
+import { FadingDivLeft, FadingDivRight } from '../../components/blocks/FadingDiv.styles';
 
 type ShowcasingBlockProps = {
   title: string;
@@ -23,15 +24,19 @@ const ShowcasingBlock = ({
 }: ShowcasingBlockProps) => {
   return (
     <ShowcasingContainer>
-      <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+      <FadingDivRight>
+        <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+      </FadingDivRight>
 
-      <ShowcasingBlockContent>
-        <Heading4>{title}</Heading4>
-        <Margin bottom={40}>
-          <P>{description}</P>
-        </Margin>
-        <ButtonTab url={url} buttonText={title} />
-      </ShowcasingBlockContent>
+      <FadingDivLeft>
+        <ShowcasingBlockContent>
+          <Heading4>{title}</Heading4>
+          <Margin bottom={40}>
+            <P>{description}</P>
+          </Margin>
+          <ButtonTab url={url} buttonText={title} />
+        </ShowcasingBlockContent>
+      </FadingDivLeft>
     </ShowcasingContainer>
   );
 };
