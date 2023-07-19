@@ -16,6 +16,7 @@ import { ButtonLink } from '../../components/buttons/Buttons.styles';
 import { PLANNING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
+import { FadingDivLeft, FadingDivRight } from '../../components/blocks/FadingDiv';
 
 const GrandFoyer = () => {
   const navigate = useNavigate();
@@ -32,29 +33,33 @@ const GrandFoyer = () => {
         <GrandFoyerContentContainer backgroundColour="white">
           <Heading2>A space for everything</Heading2>
           <GrandFoyerFlexContainer>
-            <div>
-              <Heading3>{SPACE_INFO_CONTENT.title}</Heading3>
-              <Margin bottom={24}>
-                {SPACE_INFO_CONTENT.content.map((p) => (
-                  <P>{p}</P>
-                ))}
-              </Margin>
-              <CenterAlign>
-                <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink>
-              </CenterAlign>
-            </div>
+            <FadingDivRight>
+              <div>
+                <Heading3>{SPACE_INFO_CONTENT.title}</Heading3>
+                <Margin bottom={24}>
+                  {SPACE_INFO_CONTENT.content.map((p) => (
+                    <P>{p}</P>
+                  ))}
+                </Margin>
+                <CenterAlign>
+                  <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink>
+                </CenterAlign>
+              </div>
+            </FadingDivRight>
 
-            <div>
-              <Heading3>{FLOOR_PLAN_CONTENT.title}</Heading3>
-              <Margin bottom={24}>
-                {FLOOR_PLAN_CONTENT.content.map((p) => (
-                  <P>{p}</P>
-                ))}
-              </Margin>
-              <CenterAlign>
-                <ButtonLink disabled>{FLOOR_PLAN_CONTENT.buttonLabel}</ButtonLink>
-              </CenterAlign>
-            </div>
+            <FadingDivLeft>
+              <div>
+                <Heading3>{FLOOR_PLAN_CONTENT.title}</Heading3>
+                <Margin bottom={24}>
+                  {FLOOR_PLAN_CONTENT.content.map((p) => (
+                    <P>{p}</P>
+                  ))}
+                </Margin>
+                <CenterAlign>
+                  <ButtonLink disabled>{FLOOR_PLAN_CONTENT.buttonLabel}</ButtonLink>
+                </CenterAlign>
+              </div>
+            </FadingDivLeft>
           </GrandFoyerFlexContainer>
         </GrandFoyerContentContainer>
       </Container>
