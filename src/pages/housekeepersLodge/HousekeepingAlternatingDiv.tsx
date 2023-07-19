@@ -1,3 +1,8 @@
+import {
+  FadingDivLeft,
+  FadingDivRight,
+  FadingDivUp,
+} from '../../components/blocks/FadingDiv.styles';
 import { Margin } from '../../components/core/spacing';
 import { Heading4, P } from '../../components/core/typography';
 import { IsTablet, LargerThanTablet } from '../../components/screenSize/ScreenSize.styles';
@@ -52,7 +57,9 @@ const HousekeepingAlternatingDiv = ({
           <div>
             <img src={imageSource} alt={imageAlt} width="100%" />
           </div>
-          <HousekeepingContent title={title} text={text} list={list} />
+          <FadingDivUp>
+            <HousekeepingContent title={title} text={text} list={list} />
+          </FadingDivUp>
         </Margin>
       </IsTablet>
 
@@ -60,7 +67,9 @@ const HousekeepingAlternatingDiv = ({
         <HousekeepingAlternatingDivContainer>
           {index % 2 === 1 ? (
             <>
-              <HousekeepingContent title={title} text={text} list={list} />
+              <FadingDivRight>
+                <HousekeepingContent title={title} text={text} list={list} />
+              </FadingDivRight>
               <div>
                 <img src={imageSource} alt={imageAlt} width={'100%'} height={'100%'} />
               </div>
@@ -70,7 +79,9 @@ const HousekeepingAlternatingDiv = ({
               <div>
                 <img src={imageSource} alt={imageAlt} width={'100%'} height={'100%'} />
               </div>
-              <HousekeepingContent title={title} text={text} list={list} />
+              <FadingDivLeft>
+                <HousekeepingContent title={title} text={text} list={list} />
+              </FadingDivLeft>
             </>
           )}
         </HousekeepingAlternatingDivContainer>
