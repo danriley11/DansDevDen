@@ -16,10 +16,11 @@ import { ButtonLink } from '../../components/buttons/Buttons.styles';
 import { PLANNING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
-import { FadingDivLeft, FadingDivRight } from '../../components/blocks/FadingDiv';
+import { FadingDivUp } from '../../components/blocks/FadingDiv.styles';
 
 const GrandFoyer = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <HeroImage imgSrc={CoverImage} alt={'temp'} width={'100%'} />
@@ -33,33 +34,33 @@ const GrandFoyer = () => {
         <GrandFoyerContentContainer backgroundColour="white">
           <Heading2>A space for everything</Heading2>
           <GrandFoyerFlexContainer>
-            <FadingDivRight>
+            <FadingDivUp>
               <div>
                 <Heading3>{SPACE_INFO_CONTENT.title}</Heading3>
                 <Margin bottom={24}>
-                  {SPACE_INFO_CONTENT.content.map((p) => (
-                    <P>{p}</P>
+                  {SPACE_INFO_CONTENT.content.map((p, i) => (
+                    <P key={i}>{p}</P>
                   ))}
                 </Margin>
                 <CenterAlign>
                   <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink>
                 </CenterAlign>
               </div>
-            </FadingDivRight>
+            </FadingDivUp>
 
-            <FadingDivLeft>
+            <FadingDivUp>
               <div>
                 <Heading3>{FLOOR_PLAN_CONTENT.title}</Heading3>
                 <Margin bottom={24}>
-                  {FLOOR_PLAN_CONTENT.content.map((p) => (
-                    <P>{p}</P>
+                  {FLOOR_PLAN_CONTENT.content.map((p, i) => (
+                    <P key={i}>{p}</P>
                   ))}
                 </Margin>
                 <CenterAlign>
                   <ButtonLink disabled>{FLOOR_PLAN_CONTENT.buttonLabel}</ButtonLink>
                 </CenterAlign>
               </div>
-            </FadingDivLeft>
+            </FadingDivUp>
           </GrandFoyerFlexContainer>
         </GrandFoyerContentContainer>
       </Container>
@@ -68,8 +69,8 @@ const GrandFoyer = () => {
         <Container>
           <Heading2>Our available suites</Heading2>
           <FlexDiv flexDirection="row" justifyContent="space-evenly" hasHover>
-            {ZONES_CONTENT.map((zone) => (
-              <Zone onClick={() => navigate(zone.href)}>
+            {ZONES_CONTENT.map((zone, i) => (
+              <Zone key={i} onClick={() => navigate(zone.href)}>
                 <Heading4>{zone.title}</Heading4>
                 <img src={zone.image} />
                 <P>{zone.blurb}</P>
