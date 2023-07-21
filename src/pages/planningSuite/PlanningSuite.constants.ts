@@ -35,7 +35,7 @@ export const JULY_PLANNING_GOALS = [
   ['Enhance animations to trigger when within viewport'],
   [],
   [],
-  ['Improve menu content and styling'],
+  ['Improve menu content and styling', 'Slide content over house image when scrolling'],
   ['Bespoke Designs by Sharon:', '(1) Assign unique domain', '(2) Improve homepage design'],
   ['Bespoke Designs by Sharon:', 'Update Quilts and Sensory products pages'],
   ['Company position enquiries'],
