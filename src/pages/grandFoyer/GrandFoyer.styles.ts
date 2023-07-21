@@ -9,7 +9,6 @@ import {
   softGrey,
   white,
 } from '../../components/core/colours';
-import { FadingDivUp } from '../../components/blocks/FadingDiv.styles';
 
 export const GrandFoyerContainer = styled.div`
   background-image: url('../../assets/GrandFoyer.jpeg');
@@ -119,10 +118,11 @@ export const GrandFoyerSuiteContainer = styled.div`
   background-color: ${offWhite};
 `;
 
-export const Zone = styled(FadingDivUp)`
+export const Zone = styled.div`
   background-color: ${white};
   text-align: center;
   max-width: ${rem(360)};
+  height: ${rem(448)};
   border: 1px solid ${darkGrey};
   border-radius: ${rem(8)};
   padding: ${rem(24)};
