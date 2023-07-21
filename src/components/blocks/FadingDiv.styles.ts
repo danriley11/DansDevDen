@@ -71,9 +71,17 @@ const fadeFromRight = keyframes`
   }
 `;
 
-export const FadingDivUp = styled.div`
-  opacity: 0;
-  animation: 0.5s linear normal both running ${fadeInUp};
+type Props = {
+  isVisible?: boolean;
+};
+export const FadingDivUp = styled.div<Props>`
+  opacity: ${(props) => (props.isVisible ? 1 : 0.3)};
+  transform: ${(props) => (props.isVisible ? 'translateY(0)' : 'translateY(20px)')};
+  transition: opacity 2s, transform 2s;
+
+  /* analyse the difference between animation vs transform & transition */
+  /* animation: 2s linear normal both running ${(props) =>
+    props.isVisible ? fadeInUp : 'none'}; */
 `;
 
 export const FadingDivRight = styled.div`
