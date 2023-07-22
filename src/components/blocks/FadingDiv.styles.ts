@@ -71,10 +71,10 @@ const fadeFromRight = keyframes`
   }
 `;
 
-type Props = {
+type FadingDivProps = {
   isVisible?: boolean;
 };
-export const FadingDivUp = styled.div<Props>`
+export const FadingDivUp = styled.div<FadingDivProps>`
   opacity: ${(props) => (props.isVisible ? 1 : 0.3)};
   transform: ${(props) => (props.isVisible ? 'translateY(0)' : 'translateY(20px)')};
   transition: opacity 2s, transform 2s;
@@ -84,15 +84,23 @@ export const FadingDivUp = styled.div<Props>`
     props.isVisible ? fadeInUp : 'none'}; */
 `;
 
-export const FadingDivRight = styled.div`
-  opacity: 1;
+export const FadingDivRight = styled.div<FadingDivProps>`
+  opacity: ${(props) => (props.isVisible ? 1 : 0.3)};
+  transform: ${(props) => (props.isVisible ? 'translateX(0px)' : 'translateX(-20px)')};
+  transition: opacity 2s, transform 2s;
+
+  /* opacity: 1;
   transition: width 2s, height 2s;
-  animation: 2s ease-in-out normal both running ${fadeInRight};
+  animation: 2s ease-in-out normal both running ${fadeInRight}; */
 `;
 
-export const FadingDivLeft = styled.div`
-  opacity: 1;
-  animation: 2s ease-in-out reverse both running ${fadeInLeft};
+export const FadingDivLeft = styled.div<FadingDivProps>`
+  opacity: ${(props) => (props.isVisible ? 1 : 0.3)};
+  transform: ${(props) => (props.isVisible ? 'translateX(0px)' : 'translateX(20px)')};
+  transition: opacity 2s, transform 2s;
+
+  /* opacity: 1;
+  animation: 2s ease-in-out reverse both running ${fadeInLeft}; */
 `;
 
 type FadingDivAltXProps = {
