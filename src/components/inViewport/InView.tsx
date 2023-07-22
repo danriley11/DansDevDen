@@ -1,12 +1,15 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
-import { FadingDivUp } from '../blocks/FadingDiv.styles';
+import { FadingDivLeft, FadingDivRight, FadingDivUp } from '../blocks/FadingDiv.styles';
 
 interface IntersectionProps {
   children: ReactNode;
   threshold?: number;
+  fadeUp?: boolean;
+  fadeLeft?: boolean;
+  fadeRight?: boolean;
 }
 
-const IntersectionWrapper = ({ children, threshold = 0.5 }: IntersectionProps) => {
+const IntersectionWrapper = ({ children, threshold = 0.5, fadeUp, fadeLeft, fadeRight }: IntersectionProps) => {
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -34,11 +37,29 @@ const IntersectionWrapper = ({ children, threshold = 0.5 }: IntersectionProps) =
     };
   }, []);
 
-  return (
-    <FadingDivUp ref={elementRef} isVisible={isVisible}>
-      {children}
-    </FadingDivUp>
-  );
+  if (fadeUp) {
+    return (
+      <FadingDivUp ref={elementRef} isVisible={isVisible}>
+        {children}
+      </FadingDivUp>
+    );
+  }
+
+  if (fadeLeft) {
+    return (
+      <FadingDivLeft ref={elementRef} isVisible={isVisible}>
+        {children}
+      </FadingDivLeft>
+    );
+  }
+
+  if (fadeRight) {
+    return (
+      <FadingDivRight ref={elementRef} isVisible={isVisible}>
+        {children}
+      </FadingDivRight>
+    );
+  }
 };
 
 export default IntersectionWrapper;
