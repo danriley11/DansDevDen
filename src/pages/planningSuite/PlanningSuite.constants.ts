@@ -33,7 +33,7 @@ export const JULY_PLANNING_GOALS = [
   ['Labour', 'Company position enquiries'],
   // ['Build a link preview for Dans Dev Den'],
   ['Enhance animations to trigger when within viewport'],
-  [],
+  ['Resolve animation bugs'],
   [],
   [
     'Improve menu content and styling',
