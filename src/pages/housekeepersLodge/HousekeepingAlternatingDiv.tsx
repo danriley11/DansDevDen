@@ -1,10 +1,6 @@
-import {
-  FadingDivLeft,
-  FadingDivRight,
-  FadingDivUp,
-} from '../../components/blocks/FadingDiv.styles';
 import { Margin } from '../../components/core/spacing';
 import { Heading4, P } from '../../components/core/typography';
+import IntersectionWrapper from '../../components/inViewport/InView';
 import { IsTablet, LargerThanTablet } from '../../components/screenSize/ScreenSize.styles';
 import {
   HousekeepingAlternatingDivContainer,
@@ -57,9 +53,10 @@ const HousekeepingAlternatingDiv = ({
           <div>
             <img src={imageSource} alt={imageAlt} width="100%" />
           </div>
-          <FadingDivUp>
-            <HousekeepingContent title={title} text={text} list={list} />
-          </FadingDivUp>
+          <IntersectionWrapper
+            fadeUp
+            children={<HousekeepingContent title={title} text={text} list={list} />}
+          />
         </Margin>
       </IsTablet>
 
@@ -67,9 +64,10 @@ const HousekeepingAlternatingDiv = ({
         <HousekeepingAlternatingDivContainer>
           {index % 2 === 1 ? (
             <>
-              <FadingDivRight>
-                <HousekeepingContent title={title} text={text} list={list} />
-              </FadingDivRight>
+              <IntersectionWrapper
+                fadeRight
+                children={<HousekeepingContent title={title} text={text} list={list} />}
+              />
               <div>
                 <img src={imageSource} alt={imageAlt} width={'100%'} height={'100%'} />
               </div>
@@ -79,9 +77,10 @@ const HousekeepingAlternatingDiv = ({
               <div>
                 <img src={imageSource} alt={imageAlt} width={'100%'} height={'100%'} />
               </div>
-              <FadingDivLeft>
-                <HousekeepingContent title={title} text={text} list={list} />
-              </FadingDivLeft>
+              <IntersectionWrapper
+                fadeLeft
+                children={<HousekeepingContent title={title} text={text} list={list} />}
+              />
             </>
           )}
         </HousekeepingAlternatingDivContainer>
