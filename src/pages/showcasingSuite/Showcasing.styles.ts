@@ -11,13 +11,13 @@ export const ShowcasingContainer = styled.div`
   justify-content: center;
   column-gap: ${rem(24)};
 
-  div {
-    flex: 1;
-  }
-
   ${mediaUp.lg`
         flex-wrap: nowrap;
         text-align: left;
+
+        div {
+          flex: 1;
+        }
     `}
 `;
 
