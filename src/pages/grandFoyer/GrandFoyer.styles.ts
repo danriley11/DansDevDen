@@ -122,6 +122,7 @@ export const Zone = styled.div`
   background-color: ${white};
   text-align: center;
   max-width: ${rem(360)};
+  height: ${rem(448)};
   border: 1px solid ${darkGrey};
   border-radius: ${rem(8)};
   padding: ${rem(24)};

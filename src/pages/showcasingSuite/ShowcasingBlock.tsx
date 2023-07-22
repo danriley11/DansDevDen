@@ -6,6 +6,7 @@ import {
   ShowcasingContainer,
 } from './Showcasing.styles';
 import ButtonTab from '../../components/buttons/ButtonTab';
+import IntersectionWrapper from '../../components/inViewport/InView';
 
 type ShowcasingBlockProps = {
   title: string;
@@ -23,15 +24,25 @@ const ShowcasingBlock = ({
 }: ShowcasingBlockProps) => {
   return (
     <ShowcasingContainer>
-      <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+      <IntersectionWrapper
+        fadeRight
+        children={
+          <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+        }
+      />
 
-      <ShowcasingBlockContent>
-        <Heading4>{title}</Heading4>
-        <Margin bottom={40}>
-          <P>{description}</P>
-        </Margin>
-        <ButtonTab url={url} buttonText={title} />
-      </ShowcasingBlockContent>
+      <IntersectionWrapper
+        fadeLeft
+        children={
+          <ShowcasingBlockContent>
+            <Heading4>{title}</Heading4>
+            <Margin bottom={40}>
+              <P>{description}</P>
+            </Margin>
+            <ButtonTab url={url} buttonText={title} />
+          </ShowcasingBlockContent>
+        }
+      />
     </ShowcasingContainer>
   );
 };
