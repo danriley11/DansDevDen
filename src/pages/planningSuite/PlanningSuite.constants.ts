@@ -37,14 +37,65 @@ export const JULY_PLANNING_GOALS = [
   [],
   [
     'Improve menu content and styling',
-    'Slide content over house image when scrolling',
-    'Plan Learning suite',
+    // 'Slide content over house image when scrolling',
   ],
-  ['Build Learning suite'],
-  ['Bespoke Designs by Sharon:', '(1) Assign unique domain', '(2) Improve homepage design'],
-  ['Bespoke Designs by Sharon:', 'Update Quilts and Sensory products pages'],
+  ['Plan Learning suite'],
+  ['Labouring'],
+  [
+    'Build Learning Suite',
+    'Bespoke Designs by Sharon:',
+    'Assign unique domain',
+    'Improve homepage design',
+    'Update Quilts and Sensory products pages',
+  ],
   ['Company position enquiries'],
   [],
   [],
-  ['Company position enquiries'],
+  ['Labouring'],
+];
+
+export const AUGUST_PLANNING_GOALS = [
+  [],
+  [],
+  [],
+  //   4
+  [],
+  //   5
+  [],
+  //   6
+  [],
+  //   7
+  [],
+  //   8
+  [],
+  //   9
+  [],
+  //   10
+  [],
+  //   11
+  [],
+  //   12
+  [],
+  //   13
+  [],
+  //   14
+  [],
+  [],
+  [],
+  //   17
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
 ];

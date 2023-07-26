@@ -6,10 +6,7 @@ export const Container = styled.div`
   min-width: ${rem(370)};
 
   ${mediaUp.xs`
-    padding: 0 ${rem(8)}
-  `};
-  ${mediaUp.sm`
-    padding: 0 ${rem(16)};
+    padding: 0 ${rem(16)}
   `};
 
   ${mediaUp.md`
