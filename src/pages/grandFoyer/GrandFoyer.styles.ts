@@ -95,12 +95,8 @@ export const GrandFoyerFlexContainer = styled.div`
   column-gap: ${rem(24)};
   flex-wrap: wrap;
 
-  div:first-child {
+  & > div {
     padding-bottom: ${rem(40)};
-  }
-
-  div:nth-child(2) {
-    flex: 1;
   }
 
   ${mediaUp.md`    
