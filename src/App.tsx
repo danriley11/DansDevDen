@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { GRAND_FOYER, HOUSEKEEPING, PLANNING, SHOWCASING } from './routes/routes';
+import { GRAND_FOYER, HOUSEKEEPING, LEARNING, PLANNING, SHOWCASING } from './routes/routes';
 import { Suspense, lazy } from 'react';
 import DefaultRouteWrapper from './routes/RouteWrappers';
-import ShowcasingSuite from './pages/showcasingSuite/ShowcasingSuite';
 import ScrollToTop from './routes/ScrollToTop';
-import PlanningSuite from './pages/planningSuite/PlanningSuite';
 
 const GrandFoyer = lazy(() => import('./pages/grandFoyer/GrandFoyer'));
+const LearningSuite = lazy(() => import('./pages/learningSuite/LearningSuite'));
+const ShowcasingSuite = lazy(() => import('./pages/showcasingSuite/ShowcasingSuite'));
+const PlanningSuite = lazy(() => import('./pages/planningSuite/PlanningSuite'));
 const Housekeeping = lazy(() => import('./pages/housekeepersLodge/HousekeepersLodge'));
 
 function App() {
@@ -24,14 +25,16 @@ function App() {
               </DefaultRouteWrapper>
             }
           />
+
           <Route
-            path={HOUSEKEEPING}
+            path={LEARNING}
             element={
               <DefaultRouteWrapper>
-                <Housekeeping />
+                <LearningSuite />
               </DefaultRouteWrapper>
             }
           />
+
           <Route
             path={SHOWCASING}
             element={
@@ -40,11 +43,21 @@ function App() {
               </DefaultRouteWrapper>
             }
           />
+
           <Route
             path={PLANNING}
             element={
               <DefaultRouteWrapper>
                 <PlanningSuite />
+              </DefaultRouteWrapper>
+            }
+          />
+
+          <Route
+            path={HOUSEKEEPING}
+            element={
+              <DefaultRouteWrapper>
+                <Housekeeping />
               </DefaultRouteWrapper>
             }
           />
