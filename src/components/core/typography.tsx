@@ -69,10 +69,14 @@ export const Heading4 = styled.h4`
   margin: ${rem(24)} 0;
 `;
 
-export const P = styled.p`
+type PProps = {
+  margin?: number;
+};
+export const P = styled.p<PProps>`
   font-size: ${fontSize16};
   font-family: ${fontFamily};
   font-weight: ${weights.regular};
   line-height: ${fontSize24};
   max-width: fit-content;
+  margin: ${({ margin = 16 }) => rem(margin)};
 `;
