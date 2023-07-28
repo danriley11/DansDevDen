@@ -30,6 +30,14 @@ export const LargerThanTablet = styled.div`
 
   ${mediaUp.md`
     display: block;
+    `}
+`;
+
+export const SmallerThanDesktop = styled.div`
+  display: block;
+
+  ${mediaUp.lg`
+    display: none;
 `}
 `;
 
