@@ -43,29 +43,45 @@ const LearningSuite = () => {
 
         <Margin bottom={64}>
           <FlexDiv justifyContent="space-evenly" flexDirection="row">
-            <P margin={0}>
-              <ol>
-                <li>No mentor/support for learning</li>
-                <ul>
-                  <li>
+            <ol>
+              <li>
+                <P margin={0}>No mentor/support for learning</P>
+              </li>
+              <ul>
+                <li>
+                  <P margin={0}>
                     Learn from readings and examples, then instill them through practice with
                     activities.
-                  </li>
-                </ul>
-                <li>No funds for a course</li>
-                <ul>
-                  <li>A free platform for its WIP state.</li>
-                </ul>
-                <li>Unsure of where to start</li>
-                <ul>
-                  <li>Structured guide of concepts and tools.</li>
-                </ul>
-                <li>Utilising short bursts of time to learn</li>
-                <ul>
-                  <li>Using the randomizer in Readings & Examples or trying an activity.</li>
-                </ul>
-              </ol>
-            </P>
+                  </P>
+                </li>
+              </ul>
+              <li>
+                <P margin={0}>No funds for a course</P>
+              </li>
+              <ul>
+                <li>
+                  <P margin={0}>A free platform for its WIP state.</P>
+                </li>
+              </ul>
+              <li>
+                <P margin={0}>Unsure of where to start</P>
+              </li>
+              <ul>
+                <li>
+                  <P margin={0}>Structured guide of concepts and tools.</P>
+                </li>
+              </ul>
+              <li>
+                <P margin={0}>Utilising short bursts of time to learn</P>
+              </li>
+              <ul>
+                <li>
+                  <P margin={0}>
+                    Using the randomizer in Readings & Examples or trying an activity.
+                  </P>
+                </li>
+              </ul>
+            </ol>
 
             <LargerThanTablet>
               <img src={CodeImg} alt="Code example" width={400} />
