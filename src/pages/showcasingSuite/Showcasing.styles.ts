@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mediaUp, rem } from '../../components/core/styles';
-import { softGrey } from '../../components/core/colours';
+import { deepGreen, softGrey } from '../../components/core/colours';
 
 export const ShowcasingContainer = styled.div`
   display: flex;
@@ -22,20 +22,38 @@ export const ShowcasingContainer = styled.div`
 `;
 
 export const ShowcasingBlockImg = styled.img`
-  display: flex;
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
   border-radius: ${rem(8)};
   border: 1px solid ${softGrey};
+  box-shadow: 0 0 50px ${deepGreen};
 `;
 
 export const ShowcasingBlockContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 400px;
+  text-align: center;
 
   ${mediaUp.lg`
-  h4 {
+  h3 {
       margin-top: 0;
     }
-      `};
+    h4 {
+      margin: 0;
+    }
+  `};
+`;
+
+export const ShowcasingBlockFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
