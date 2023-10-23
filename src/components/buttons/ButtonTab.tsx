@@ -1,14 +1,14 @@
 import { ButtonLink } from './Buttons.styles';
 
 type ButtonTabProps = {
-  url: string;
+  url: string | null;
   buttonText: string;
   disabled?: boolean;
 };
 const ButtonTab = ({ url, buttonText, disabled }: ButtonTabProps) => {
   const handleButtonClick = () => {
     const urlLocation = url; // Specify the URL you want to open
-    window.open(urlLocation, '_blank');
+    urlLocation && window.open(urlLocation, '_blank');
   };
 
   return (

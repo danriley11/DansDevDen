@@ -6,7 +6,7 @@ import IntersectionWrapper from '../../components/inViewport/InView';
 
 type ShowcasingBlockProps = {
   title: string;
-  websiteUrl: string;
+  websiteUrl: string | null;
   githubUrl: string | null;
   description: string;
   previewImage: string;
