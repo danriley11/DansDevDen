@@ -1,33 +1,62 @@
 import { Margin } from '../../components/core/spacing';
-import { Heading4, P } from '../../components/core/typography';
-import {
-  ShowcasingBlockContent,
-  ShowcasingBlockImg,
-  ShowcasingContainer,
-} from './Showcasing.styles';
+import { Heading3, Heading4, P } from '../../components/core/typography';
+import { ShowcasingBlockContent, ShowcasingBlockFooter, ShowcasingBlockImg, ShowcasingContainer } from './Showcasing.styles';
 import ButtonTab from '../../components/buttons/ButtonTab';
 import IntersectionWrapper from '../../components/inViewport/InView';
 
 type ShowcasingBlockProps = {
   title: string;
-  url: string;
+  websiteUrl: string;
+  githubUrl: string | null;
   description: string;
   previewImage: string;
   previewImageAlt: string;
+  techStack: string[];
+  howIKnow: string;
+  launchDate: string;
+  authors: string[];
 };
 const ShowcasingBlock = ({
   title,
-  url,
+  websiteUrl,
+  githubUrl,
   description,
   previewImage,
   previewImageAlt,
+  techStack,
+  howIKnow,
+  launchDate,
+  authors,
 }: ShowcasingBlockProps) => {
+  console.log(techStack);
+
   return (
     <ShowcasingContainer>
       <IntersectionWrapper
         fadeRight
+        children={<ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />}
+      />
+
+      <IntersectionWrapper
+        fadeUp
         children={
-          <ShowcasingBlockImg src={previewImage} alt={previewImageAlt} width={400} height={300} />
+          <>
+            <ShowcasingBlockContent>
+              <Heading3>{title}</Heading3>
+              <Margin bottom={40}>
+                <P margin={0}>{description}</P>
+              </Margin>
+              <Margin bottom={16}>
+                <ButtonTab url={websiteUrl} buttonText={title} disabled={websiteUrl === null} />
+              </Margin>
+              {githubUrl && (
+                <Margin bottom={40}>
+                  <br />
+                  <ButtonTab url={githubUrl} buttonText="Github repository" />
+                </Margin>
+              )}
+            </ShowcasingBlockContent>
+          </>
         }
       />
 
@@ -35,11 +64,28 @@ const ShowcasingBlock = ({
         fadeLeft
         children={
           <ShowcasingBlockContent>
-            <Heading4>{title}</Heading4>
-            <Margin bottom={40}>
-              <P>{description}</P>
-            </Margin>
-            <ButtonTab url={url} buttonText={title} />
+            <Heading4>Tech stack</Heading4>
+            <P>{techStack.join(', ')}</P>
+            <br />
+
+            <Heading4>How did I learn to build this?</Heading4>
+            <P>{howIKnow}</P>
+            <br />
+
+            <ShowcasingBlockFooter>
+              {launchDate && (
+                <div>
+                  <Heading4>Launch Date</Heading4>
+                  <P>{launchDate}</P>
+                </div>
+              )}
+              {authors && (
+                <div>
+                  <Heading4>Author{authors.length === 1 ? '' : 's'}</Heading4>
+                  <P>{authors.join(', ')}</P>
+                </div>
+              )}
+            </ShowcasingBlockFooter>
           </ShowcasingBlockContent>
         }
       />
