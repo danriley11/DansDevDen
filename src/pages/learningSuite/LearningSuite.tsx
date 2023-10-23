@@ -7,9 +7,9 @@ import { PageHeader } from '../../components/pageStructure/header/PageHeading.st
 import { LearningSuiteContentContainer, LearningSuiteH4 } from './LearningSuite.styles';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 import CodeImg from '../../assets/CodeImg(copy).jpg';
-import img1 from '../../assets/Learning1.webp';
-import img2 from '../../assets/Learning2.png';
-import img3 from '../../assets/Learning3.jpg';
+import img1 from '../../assets/Learning2.png';
+import img2 from '../../assets/Learning4.jpg';
+import img3 from '../../assets/Learning5.jpg';
 import { LargerThanTablet } from '../../components/screenSize/ScreenSize.styles';
 import Carousel from '../../components/images/Carousel';
 import { Divider } from '../../components/blocks/Divider.styles';
@@ -21,25 +21,19 @@ const LearningSuite = () => {
 
       <Carousel
         cycleTimer={8000}
-        slides={[
-          <img src={img1} alt="Slide 1" />,
-          <img src={img2} alt="Slide 2" />,
-          <img src={img3} alt="Slide 3" />,
-        ]}
+        slides={[<img src={img1} alt="Slide 1" />, <img src={img2} alt="Slide 2" />, <img src={img3} alt="Slide 3" />]}
       />
 
       <Container>
         <PageHeader>Learning Suite</PageHeader>
         <Margin bottom={40}>
           <P>
-            This is a space I wanted to build to not only further ingrain my learnings to date and
-            as I go, but also provide a space others can learn from either sequentially or randomly.
+            This is a space I wanted to build to not only further ingrain my learnings to date and as I go, but also provide a
+            space others can learn from either sequentially or randomly.
           </P>
         </Margin>
 
-        <LearningSuiteH4>
-          I have a few problems I'm looking to solve with this space
-        </LearningSuiteH4>
+        <LearningSuiteH4>I have a few problems I'm looking to solve with this space</LearningSuiteH4>
 
         <Margin bottom={64}>
           <FlexDiv justifyContent="space-evenly" flexDirection="row">
@@ -49,10 +43,7 @@ const LearningSuite = () => {
               </li>
               <ul>
                 <li>
-                  <P margin={0}>
-                    Learn from readings and examples, then instill them through practice with
-                    activities.
-                  </P>
+                  <P margin={0}>Learn from readings and examples, then instill them through practice with activities.</P>
                 </li>
               </ul>
               <li>
@@ -76,9 +67,7 @@ const LearningSuite = () => {
               </li>
               <ul>
                 <li>
-                  <P margin={0}>
-                    Using the randomizer in Readings & Examples or trying an activity.
-                  </P>
+                  <P margin={0}>Using the randomizer in Readings & Examples or trying an activity.</P>
                 </li>
               </ul>
             </ol>
@@ -96,7 +85,7 @@ const LearningSuite = () => {
               <P>Learn skills with solution examples in order or randomly</P>
               <ButtonLink disabled>Readings & Examples</ButtonLink>
             </div>
-            <Divider />
+            <Divider style={{ margin: '0 24px' }} />
             <div>
               <LearningSuiteH4>Activities</LearningSuiteH4>
               <P>Take your chances at problem solving and consolidate your skills</P>

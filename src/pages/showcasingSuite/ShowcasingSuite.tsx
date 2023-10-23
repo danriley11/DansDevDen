@@ -18,10 +18,15 @@ const ShowcasingSuite = () => {
             <ShowcasingBlock
               key={i}
               title={showcase.title}
-              url={showcase.url}
+              websiteUrl={showcase.websiteUrl}
+              githubUrl={showcase.githubUrl}
               description={showcase.description}
               previewImage={showcase.previewImage}
               previewImageAlt={showcase.previewImageAlt}
+              techStack={showcase.techStack}
+              howIKnow={showcase.howIKnow}
+              launchDate={showcase.launchDate}
+              authors={showcase.authors}
             />
 
             <Divider vertMargin={32} />
