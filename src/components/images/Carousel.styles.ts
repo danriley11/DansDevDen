@@ -18,37 +18,40 @@ export const CarouselContainer = styled.div`
 
   ${mediaUp.xs`
    width: 100%;
-   height: 100%;
-
+   
    img {
-    width: 100vh;
+     height: 300px;
+     width: 100vh;
+     object-fit: cover;
    }
   `}
 
   ${mediaUp.sm`
    width: 100%;
-   height: 100%;
-
+   
    img {
-    width: 120vh;
+    object-fit: cover;
+     height: 400px;
+     width: 110vh;
    }
   `}
 
   ${mediaUp.md`
    width: 100%;
-   height: 100%;
-
+   
    img {
+     height: 500px;
     width: 160vh;
    }
   `}
 
   ${mediaUp.lg`
    width: 100%;
-   height: 100%;
-
+   
    img {
-    width: 250vh;
+     width: 250vh;
+     height: 500px;
+     object-fit: cover;
    }
   `}
 
