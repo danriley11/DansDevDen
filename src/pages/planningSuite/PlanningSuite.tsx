@@ -36,13 +36,11 @@ const PlanningSuite = () => {
           <GridContainer>
             {daysArray.map((day, i) => (
               <div key={i}>
-                <GridItem
-                  key={day.date.format('YYYY-MM-DD')}
-                  isCurrentDay={day.date.isSame(currentDate, 'day')}>
+                <GridItem key={day.date.format('YYYY-MM-DD')} isCurrentDay={day.date.isSame(currentDate, 'day')}>
                   <DayDate>{day.date.format('D ddd')}</DayDate>
                   <ul>
                     {day.goals.map((goal, i) => (
-                      <li>
+                      <li key={i}>
                         <DayGoals key={i}>{goal}</DayGoals>
                       </li>
                     ))}
