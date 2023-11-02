@@ -3,6 +3,7 @@ import { Heading3, Heading4, P } from '../../components/core/typography';
 import { ShowcasingBlockContent, ShowcasingBlockFooter, ShowcasingBlockImg, ShowcasingContainer } from './Showcasing.styles';
 import ButtonTab from '../../components/buttons/ButtonTab';
 import IntersectionWrapper from '../../components/inViewport/InView';
+import { ReactNode } from 'react';
 
 type ShowcasingBlockProps = {
   title: string | ReactNode;
