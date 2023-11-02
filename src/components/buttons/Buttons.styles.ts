@@ -8,7 +8,7 @@ type ButtonLinkProps = {
   disabled?: boolean;
 };
 export const ButtonLink = styled.button<ButtonLinkProps>`
-  display: block;
+  display: flex;
   width: fit-content;
 
   color: ${deepGreen};

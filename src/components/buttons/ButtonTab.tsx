@@ -1,8 +1,9 @@
+import { ReactNode } from 'react';
 import { ButtonLink } from './Buttons.styles';
 
 type ButtonTabProps = {
   url: string | null;
-  buttonText: string;
+  buttonText: string | ReactNode;
   disabled?: boolean;
 };
 const ButtonTab = ({ url, buttonText, disabled }: ButtonTabProps) => {
