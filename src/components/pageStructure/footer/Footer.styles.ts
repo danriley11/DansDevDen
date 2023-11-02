@@ -25,7 +25,6 @@ export const FooterContainer = styled.div`
     a {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      justify-items: center;
       color: ${greenAccent2};
       text-decoration: none;
 
@@ -39,6 +38,7 @@ export const FooterContainer = styled.div`
       display: grid;
       gap: ${rem(10)};
       text-align: center;
+      justify-items: center;
     }
 
     [aria-disabled='true'] {
