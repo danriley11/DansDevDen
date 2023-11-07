@@ -1,20 +1,34 @@
 import dayjs from 'dayjs';
 import { Container } from '../../components/pageStructure/Container.styles';
 import { PageHeader } from '../../components/pageStructure/header/PageHeading.styles';
-import { DayDate, GridContainer, GridItem, DayGoals } from './PlanningSuite.styles';
-import { Heading2, Heading4 } from '../../components/core/typography';
+import { DayDate, GridContainer, GridItem, DayGoals, ButtonContainer } from './PlanningSuite.styles';
+import { Heading2 } from '../../components/core/typography';
 import { Margin, CenterAlign } from '../../components/core/spacing';
 import { NavBacking } from '../../components/pageStructure/header/Navbar.styles';
 import { MONTHLY_PLANNING_GOALS } from './PlanningSuite.constants';
-import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
+import { useState } from 'react';
+import { ButtonLink } from '../../components/buttons/Buttons.styles';
 
 const PlanningSuite = () => {
   const currentDate = dayjs();
   const initialDevDate = dayjs('2023-7-01');
   const monthsSinceStart = currentDate.diff(initialDevDate, 'months') + 1;
+  const [currentMonthIndex, setCurrentMonthIndex] = useState(monthsSinceStart - 1);
 
-  const monthsArray = Array.from({ length: monthsSinceStart }, (_, index) => {
-    const currentMonth = initialDevDate.add(index, 'month');
+  const handlePreviousMonth = () => {
+    if (currentMonthIndex > 0) {
+      setCurrentMonthIndex(currentMonthIndex - 1);
+    }
+  };
+
+  const handleNextMonth = () => {
+    if (currentMonthIndex < monthsSinceStart) {
+      setCurrentMonthIndex(currentMonthIndex + 1);
+    }
+  };
+
+  const monthsArray = Array.from({ length: monthsSinceStart }, () => {
+    const currentMonth = initialDevDate.add(currentMonthIndex, 'month');
     const startOfMonth = currentMonth.startOf('month');
     const endOfMonth = currentMonth.endOf('month');
     const daysInMonth = endOfMonth.diff(startOfMonth, 'day') + 1;
@@ -35,8 +49,6 @@ const PlanningSuite = () => {
     };
   });
 
-  console.log('monthsArray', monthsArray);
-
   return (
     <>
       <NavBacking />
@@ -45,32 +57,46 @@ const PlanningSuite = () => {
         <PageHeader>Planning Suite</PageHeader>
 
         <Container>
-          <FlexDiv justifyContent="space-between" flexDirection="row">
-            <Heading4>⬅️ Previous month</Heading4>
-            <Heading4>Next month ➡️</Heading4>
-          </FlexDiv>
+          <ButtonContainer justifyContent="space-between" flexDirection="row" alignItems="center">
+            <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
+              ⬅️ Previous month
+            </ButtonLink>
+            <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
+              Next month ➡️
+            </ButtonLink>
+          </ButtonContainer>
 
-          {monthsArray.map((monthData, monthIndex) => (
-            <>
-              <CenterAlign>
-                <Heading2>{monthData.month}</Heading2>
-              </CenterAlign>
-              <GridContainer key={monthIndex}>
-                {monthData.days.map((dayData, dayIndex) => (
-                  <GridItem key={dayIndex}>
-                    <DayDate>{dayData.day}</DayDate>
-                    <ul>
-                      {monthData.monthlyGoals[monthIndex].days[dayIndex].goals.map((daysGoals, goalIndex) => (
+          <CenterAlign>
+            <Heading2>{monthsArray[currentMonthIndex].month}</Heading2>
+          </CenterAlign>
+
+          <Margin bottom={72}>
+            <GridContainer>
+              {monthsArray[currentMonthIndex].days.map((dayData, dayIndex) => (
+                <GridItem key={dayIndex}>
+                  <DayDate>{dayData.day}</DayDate>
+                  <ul>
+                    {monthsArray[currentMonthIndex].monthlyGoals[currentMonthIndex].days[dayIndex].goals.map(
+                      (daysGoals, goalIndex) => (
                         <li key={goalIndex}>
                           <DayGoals>{daysGoals}</DayGoals>
                         </li>
-                      ))}
-                    </ul>
-                  </GridItem>
-                ))}
-              </GridContainer>
-            </>
-          ))}
+                      ),
+                    )}
+                  </ul>
+                </GridItem>
+              ))}
+            </GridContainer>
+          </Margin>
+
+          <ButtonContainer justifyContent="space-between" flexDirection="row" alignItems="center">
+            <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
+              ⬅️ Previous month
+            </ButtonLink>
+            <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
+              Next month ➡️
+            </ButtonLink>
+          </ButtonContainer>
         </Container>
       </Margin>
     </>
