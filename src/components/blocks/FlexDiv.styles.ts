@@ -7,6 +7,7 @@ type FlexDivProps = {
   flexDirection?: string;
   justifyContent?: string;
   alignContent?: string;
+  alignItems?: string;
   gap?: number;
   hasHover?: boolean;
 };
@@ -17,6 +18,7 @@ export const FlexDiv = styled.div<FlexDivProps>`
   flex-direction: ${({ flexDirection = 'column' }) => flexDirection};
   justify-content: ${({ justifyContent = 'inherit' }) => justifyContent};
   align-content: ${({ alignContent = 'inherit' }) => alignContent};
+  align-items: ${({ alignItems = 'inherit' }) => alignItems};
   gap: ${({ gap = 0 }) => rem(gap)};
 
   ${({ hasHover = false }) =>

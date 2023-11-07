@@ -16,3 +16,6 @@ export const deepGreen = `RGBA(0, 85, 28)`;
 export const darkGreen = `RGBA(0, 67, 43)`;
 export const greenAccent1 = `RGBA(160, 190, 116)`;
 export const greenAccent2 = `RGBA(70, 143, 100)`;
+export const greenAccent3 = `RGBA(53, 123, 89)`;
+export const greenAccent4 = `RGBA(0, 81, 89)`;
+export const greenAccent5 = `RGBA(0, 81, 53)`;
