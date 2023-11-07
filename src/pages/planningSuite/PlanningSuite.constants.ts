@@ -4,107 +4,8 @@
 // October: WesBos course / Car accident
 // November: Applications / Interviews / DDD
 
-export const JULY_PLANNING_GOALS = [
-  [],
-  [],
-  [],
-  //   4
-  ['Launch Dans Dev Den'],
-  //   5
-  ['Labour'],
-  //   6
-  ['Labour'],
-  //   7
-  ['Support housekeeping lodge in mobile', 'Create wireframe for new client'],
-  //   8
-  [],
-  //   9
-  [],
-  //   10
-  ['Labour'],
-  //   11
-  ['Design and plan Bespoke Designs by Sharon'],
-  //   12
-  ['Build & launch Bespoke Designs by Sharon'],
-  //   13
-  ['Attend AWS Builders event', 'Build showcasing suite'],
-  //   14
-  ['Cleanup showcasing suite', 'Build planning suite'],
-  [],
-  [],
-  //   17
-  ['Company position enquiries'],
-  ['Labour', 'Company position enquiries'],
-  ['Add base animations to GrandFoyer, Housekeeping, Showcasing'],
-  ['Labour', 'Company position enquiries'],
-  // ['Build a link preview for Dans Dev Den'],
-  ['Enhance animations to trigger when within viewport'],
-  ['Resolve animation bugs'],
-  [],
-  [
-    'Improve menu content and styling',
-    // 'Slide content over house image when scrolling',
-  ],
-  ['Plan Learning suite'],
-  ['Labouring'],
-  [
-    'Build Learning Suite',
-    'Bespoke Designs by Sharon:',
-    'Assign unique domain',
-    'Improve homepage design',
-    'Update Quilts and Sensory products pages',
-  ],
-  ['Company position enquiries'],
-  [],
-  [],
-  ['Labouring'],
-];
-
-export const AUGUST_PLANNING_GOALS = [
-  [],
-  [],
-  [],
-  //   4
-  [],
-  //   5
-  [],
-  //   6
-  [],
-  //   7
-  [],
-  //   8
-  [],
-  //   9
-  [],
-  //   10
-  [],
-  //   11
-  [],
-  //   12
-  [],
-  //   13
-  [],
-  //   14
-  [],
-  [],
-  [],
-  //   17
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-];
+// ['Build a link preview for Dans Dev Den'],
+// 'Slide content over house image when scrolling',
 
 export const MONTHLY_PLANNING_GOALS = [
   {
@@ -112,127 +13,132 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: ['Launch Dans Dev Den'],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: ['Develop mobile support for housekeepers lodge', 'Create website wireframe for client'],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: ['Create website wireframe for Bespoke Designs by Sharon (MK1)'],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: ['Plan building for Bespoke Designs by Sharon (MK1)'],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: ['Design Bespoke Designs by Sharon (MK1)'],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: ['Build & launch Bespoke Designs by Sharon (MK1)'],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: ['Attend AWS Builders event', 'Build showcasing suite'],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: ['Cleanup shocasing suite', 'Build Planning suite'],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: ['Add base animations to GrandFoyer, Housekeeping, Showcasing'],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: ['Enhance animations to trigger when within viewport'],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: ['Resolve animation bugs'],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: ['Improve menu content and styling'],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: ['Plan Learning suite'],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: ['Build Learning Suite'],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: [
+          'Bespoke Designs by Sharon (MK1):',
+          'Assign unique domain',
+          'Improve homepage design',
+          'Update Quilts and Sensory products pages',
+        ],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: [null],
       },
     ],
   },
@@ -241,127 +147,127 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: ['Leave for Europe trip'],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: [null],
       },
     ],
   },
@@ -370,127 +276,127 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: ['Return from Europe trip'],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: ['Create daily planner in excel'],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: ['Begin WesBos course "Advanced React & GraphQL"'],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: ['Course module 1/14 (installation & setup)'],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: ['Course module 2/14 (page layout + Header & Nav components)'],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: ['Course module 3/14 (CSS & StyledComponents)'],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: ['Course module 4/14 (Server Side GraphQL Development)'],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: ['Course module 5/14 (Client Side React & GraphQL Development)'],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: ['Course module 5/14 (Client Side React & GraphQL Development)'],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: ['Course module 6/14 (Working with Mutations)'],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: ['Course module 7/14 (Pagination)'],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: ['Course module 7/14 (Pagination)'],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: ['Course module 8/14 (User Registration & Authentication)'],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: ['Course module 8/14 (User Registration & Authentication)'],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: [null],
       },
     ],
   },
@@ -499,127 +405,127 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: ['Course module 9/14 (Shopping Cart Development)'],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: ['Course module 10/14 (Search Bar Development)'],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: ['Course module 11/14 (Order Creation & Checkout)'],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: ['Course module 11/14 (Order Creation & Checkout)'],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: ['Investigate hosting for Course project'],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: ['Suffered a car crash'],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: ['Course module 12/14 (Frontend Order Displaying)'],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: ['Course module 13/14 (Roles, Permissions & Access)'],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: ['Funeral'],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: ['Course module 13/14 (Roles, Permissions & Access)'],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: ['Updating Course Project styles'],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: [],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: ['Create launch-ready checklist for Course Project'],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: ['Admin for car crash'],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: ['Unsuccessfully attempt to host Course Project on Vercel'],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: ['Next.js Conference', 'Update CV', 'Cleanup GitHub', 'Update Showcasing Suite blocks'],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: ['Admin'],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: ['Admin', 'Interview'],
       },
     ],
   },
@@ -628,127 +534,127 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: ['Admin', 'Interview'],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: ['Plan Planning Suite update'],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: ['Admin', 'Interview'],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: ['Update Dans Dev Den Footer'],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: ['Refurnish Planning Suite'],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: ['Admin', 'Style Planning Suite days'],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: ['Admin', 'Course module 14/14 (Testing)'],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: ['Admin', 'Course module 14/14 (Testing)'],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: ['Admin', 'Hosting Course Project'],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: ['Admin', 'Hosting Course Project'],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: ['Admin', 'Build a link preview for Dans Dev Den'],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: ['Admin', 'Slide content over house image when scrolling'],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: [null],
       },
     ],
   },
@@ -757,127 +663,127 @@ export const MONTHLY_PLANNING_GOALS = [
     days: [
       {
         day: 1,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 2,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 3,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 4,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 5,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 6,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 7,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 8,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 9,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 10,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 11,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 12,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 13,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 14,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 15,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 16,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 17,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 18,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 19,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 20,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 21,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 22,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 23,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 24,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 25,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 26,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 27,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 28,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 29,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 30,
-        goals: ['test'],
+        goals: [null],
       },
       {
         day: 31,
-        goals: ['test'],
+        goals: [null],
       },
     ],
   },
