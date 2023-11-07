@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { deepGreen, irisGreen, lightGrey, white } from '../../components/core/colours';
 import { rem } from '../../components/core/styles';
+import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 
 export const GridContainer = styled.div`
   /* Pre-defined values */
@@ -15,7 +16,6 @@ export const GridContainer = styled.div`
 
   display: grid;
   gap: var(--grid-layout-gap);
-  margin-bottom: ${rem(16)};
 
   /* NOTE: repeat({repetitions}, {min and max values of item size}, {size of remaining space after fulfilling repetitions}) */
   grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
@@ -61,4 +61,11 @@ export const DayGoals = styled.div`
   display: block;
   padding-bottom: 12px;
   text-align: center;
+`;
+
+export const ButtonContainer = styled(FlexDiv)`
+  button {
+    width: 25vh;
+    justify-content: center;
+  }
 `;
