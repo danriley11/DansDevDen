@@ -65,9 +65,7 @@ const PlanningSuite = () => {
             <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
               ⬅️ Previous month
             </ButtonLink>
-            {currentMonthIndex !== monthsSinceStart - 1 && (
-              <ButtonLink onClick={handleMoveToCurrentMonth}>Current month</ButtonLink>
-            )}
+            {currentMonthIndex !== monthsSinceStart - 1 && <ButtonLink onClick={handleMoveToCurrentMonth}>Today ↪️</ButtonLink>}
             <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
               Next month ➡️
             </ButtonLink>
@@ -100,9 +98,7 @@ const PlanningSuite = () => {
             <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
               ⬅️ Previous month
             </ButtonLink>
-            {currentMonthIndex !== monthsSinceStart - 1 && (
-              <ButtonLink onClick={handleMoveToCurrentMonth}>Current month</ButtonLink>
-            )}
+            {currentMonthIndex !== monthsSinceStart - 1 && <ButtonLink onClick={handleMoveToCurrentMonth}>Today ↪️</ButtonLink>}
             <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
               Next month ➡️
             </ButtonLink>
