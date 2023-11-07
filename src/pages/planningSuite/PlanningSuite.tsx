@@ -27,6 +27,10 @@ const PlanningSuite = () => {
     }
   };
 
+  const handleMoveToCurrentMonth = () => {
+    setCurrentMonthIndex(monthsSinceStart - 1);
+  };
+
   const monthsArray = Array.from({ length: monthsSinceStart }, () => {
     const currentMonth = initialDevDate.add(currentMonthIndex, 'month');
     const startOfMonth = currentMonth.startOf('month');
@@ -61,6 +65,9 @@ const PlanningSuite = () => {
             <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
               ⬅️ Previous month
             </ButtonLink>
+            {currentMonthIndex !== monthsSinceStart - 1 && (
+              <ButtonLink onClick={handleMoveToCurrentMonth}>Current month</ButtonLink>
+            )}
             <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
               Next month ➡️
             </ButtonLink>
@@ -73,7 +80,7 @@ const PlanningSuite = () => {
           <Margin bottom={72}>
             <GridContainer>
               {monthsArray[currentMonthIndex].days.map((dayData, dayIndex) => (
-                <GridItem key={dayIndex}>
+                <GridItem key={dayIndex} isCurrentDay={dayData.date.isSame(currentDate, 'day')}>
                   <DayDate>{dayData.day}</DayDate>
                   <ul>
                     {monthsArray[currentMonthIndex].monthlyGoals[currentMonthIndex].days[dayIndex].goals.map(
@@ -93,6 +100,9 @@ const PlanningSuite = () => {
             <ButtonLink onClick={handlePreviousMonth} disabled={currentMonthIndex === 0}>
               ⬅️ Previous month
             </ButtonLink>
+            {currentMonthIndex !== monthsSinceStart - 1 && (
+              <ButtonLink onClick={handleMoveToCurrentMonth}>Current month</ButtonLink>
+            )}
             <ButtonLink onClick={handleNextMonth} disabled={currentMonthIndex === monthsSinceStart - 1}>
               Next month ➡️
             </ButtonLink>
