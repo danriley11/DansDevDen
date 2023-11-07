@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { deepGreen, irisGreen, lightGrey, white } from '../../components/core/colours';
 import { rem } from '../../components/core/styles';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
+import { fontSize16, fontSize16LineHeight } from '../../components/core/typography';
 
 export const GridContainer = styled.div`
   /* Pre-defined values */
@@ -57,10 +58,13 @@ export const DayDate = styled.div`
   text-decoration: underline;
 `;
 
-export const DayGoals = styled.div`
+export const DayGoals = styled.p`
   display: block;
   padding-bottom: 12px;
+  margin: 0;
   text-align: center;
+  font-size: ${fontSize16};
+  line-height: ${fontSize16LineHeight};
 `;
 
 export const ButtonContainer = styled(FlexDiv)`
