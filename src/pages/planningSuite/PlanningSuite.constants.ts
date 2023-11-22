@@ -562,15 +562,15 @@ export const MONTHLY_PLANNING_GOALS = [
       },
       {
         day: 8,
-        goals: ['Admin', 'Style Planning Suite days'],
+        goals: ['Optus outage', 'Admin', 'Style Planning Suite days'],
       },
       {
         day: 9,
-        goals: ['Admin', 'Course module 14/14 (Testing)'],
+        goals: ['Power outage', 'Admin'],
       },
       {
         day: 10,
-        goals: ['Admin', 'Course module 14/14 (Testing)'],
+        goals: ['Admin', 'Job applications'],
       },
       {
         day: 11,
@@ -590,15 +590,21 @@ export const MONTHLY_PLANNING_GOALS = [
       },
       {
         day: 15,
-        goals: ['Admin', 'Build a link preview for Dans Dev Den'],
+        goals: [
+          'Admin',
+          'Build a link preview for Dans Dev Den',
+          'Catchup w/ senior developer',
+          '(identified versioning was error source)',
+        ],
       },
       {
         day: 16,
-        goals: ['Admin', 'Slide content over house image when scrolling'],
+        goals: ['Admin', 'AWSome Day (online conference)', 'Research parallax designs'],
+        // goals: ['Admin', 'Slide content over house image when scrolling'],
       },
       {
         day: 17,
-        goals: [null],
+        goals: ['Interviews', 'Job Applications'],
       },
       {
         day: 18,
@@ -610,23 +616,28 @@ export const MONTHLY_PLANNING_GOALS = [
       },
       {
         day: 20,
-        goals: [null],
+        goals: ['Interviews', 'Job applications', 'Hosting course project (identified solution)'],
       },
       {
         day: 21,
-        goals: [null],
+        goals: [
+          'Interviews',
+          'Job applications',
+          'Startup brainstorm',
+          'Hosting course project (resolved backend hosting errors)',
+        ],
       },
       {
         day: 22,
-        goals: [null],
+        goals: ['Hosted HTML DND project', 'Hosting course project (identified backend bundle size too large)'],
       },
       {
         day: 23,
-        goals: [null],
+        goals: ['Admin', 'Hosting course project (reducing backend bundle size)'],
       },
       {
         day: 24,
-        goals: [null],
+        goals: ['Admin', 'Hosting course project (reducing backend bundle size)'],
       },
       {
         day: 25,
@@ -638,19 +649,19 @@ export const MONTHLY_PLANNING_GOALS = [
       },
       {
         day: 27,
-        goals: [null],
+        goals: ['Hosting course project (resolve frontend pointing to backend)', 'Trial boxing'],
       },
       {
         day: 28,
-        goals: [null],
+        goals: ['Hosting course project (host frontend)'],
       },
       {
         day: 29,
-        goals: [null],
+        goals: ['Course module 14/14 (Testing)'],
       },
       {
         day: 30,
-        goals: [null],
+        goals: ['Course module 14/14 (Testing)'],
       },
       {
         day: 31,
