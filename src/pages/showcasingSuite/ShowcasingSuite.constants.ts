@@ -1,6 +1,7 @@
 import placeholderImage0 from '../../assets/tempDevDen.jpg';
 import placeholderImage1 from '../../assets/tempSharon.jpg';
 import placeholderImage2 from '../../assets/tempNoelle.jpg';
+import placeholderImage3 from '../../assets/tempHTMLDnD.jpg';
 import dayjs from 'dayjs';
 
 export const SHOWCASING_CASE = [
@@ -44,6 +45,19 @@ export const SHOWCASING_CASE = [
     howIKnow:
       'I learnt about each of these frameworks and packages over the course of my career and a developer course I took in 2022-2023.',
     launchDate: 'Ready as of 20th October. Currently debugging hosting errors.',
+    authors: ['Daniel Riley'],
+  },
+  {
+    title: 'DnD Character Sheet (jQuery)',
+    websiteUrl: 'https://danriley11.github.io/DnD-Character-Sheet',
+    githubUrl: 'https://github.com/danriley11/DnD-Character-Sheet',
+    description:
+      'During one of my elective units in my final year of university, they gave us a prescribed design to create but I spoke with the unit convenor to ask about creating something personal and of inspiration. This was hesitantly accepted but turned out to be the spark that ignited my belief that I could build and create websites. It created my starting mark for wanting to learn everything I can about development, software and how to bridge the gap between people and technology as a whole.',
+    previewImage: placeholderImage3,
+    previewImageAlt: 'placeholder for HTML & jQuery DND Character sheet preview',
+    techStack: ['HTML, CSS, jQuery'],
+    howIKnow: 'I learnt the skills on how to build this through the course information, research, and sandboxing.',
+    launchDate: dayjs('2020-12').format('MMM YYYY'),
     authors: ['Daniel Riley'],
   },
   {
