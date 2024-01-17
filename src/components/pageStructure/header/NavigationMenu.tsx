@@ -61,14 +61,14 @@ const NavigationMenu = () => {
             <P>Showcasing suite</P>
           </MenuDropdownItem>
 
-          <MenuDropdownItem
+          {/* <MenuDropdownItem
             isPath={pathMatch(PLANNING)}
             onClick={() => {
               toggleHamburger();
               navigate(PLANNING);
             }}>
             <P>Planning suite</P>
-          </MenuDropdownItem>
+          </MenuDropdownItem> */}
 
           <MenuDropdownItem
             isPath={pathMatch(HOUSEKEEPING)}
