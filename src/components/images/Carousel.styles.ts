@@ -4,6 +4,7 @@ import { mediaUp } from '../core/styles';
 
 export const CarouselWrapper = styled.div`
   position: relative;
+  overflow-x: hidden;
 
   &:hover {
     button {

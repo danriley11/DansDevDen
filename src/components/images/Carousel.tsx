@@ -1,10 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react';
-import {
-  CarouselButton,
-  CarouselContainer,
-  CarouselSlide,
-  CarouselWrapper,
-} from './Carousel.styles';
+import { CarouselButton, CarouselContainer, CarouselSlide, CarouselWrapper } from './Carousel.styles';
 import leftArrow from '../icons/iconLibrary/left_arrow.svg';
 import rightArrow from '../icons/iconLibrary/right_arrow.svg';
 

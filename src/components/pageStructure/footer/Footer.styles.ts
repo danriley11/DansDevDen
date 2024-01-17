@@ -4,6 +4,7 @@ import { mediaUp, rem } from '../../core/styles';
 
 export const FooterContainer = styled.div`
   position: relative;
+  overflow-x: hidden;
   padding: 0 ${rem(30)};
   background-color: ${darkGreen};
   box-shadow: 0 0 ${rem(32)} ${darkGreen};
