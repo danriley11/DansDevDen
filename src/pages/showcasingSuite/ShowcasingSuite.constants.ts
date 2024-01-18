@@ -1,5 +1,5 @@
 import placeholderImage0 from '../../assets/tempDevDen.jpg';
-import placeholderImage1 from '../../assets/tempSharon.jpg';
+import placeholderImage1 from '../../assets/tempSharon.png';
 import placeholderImage2 from '../../assets/tempNoelle.jpg';
 import placeholderImage3 from '../../assets/tempHTMLDnD.jpg';
 import dayjs from 'dayjs';
