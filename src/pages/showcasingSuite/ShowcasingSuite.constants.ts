@@ -20,8 +20,7 @@ export const SHOWCASING_CASE = [
   },
   {
     title: 'Bespoke Designs by Sharon',
-    // websiteUrl: 'https://bespoke-designs-by-sharon-e5a3lxm32-danriley11.vercel.app/',
-    websiteUrl: null,
+    websiteUrl: 'https://bespokedesignsbysharon.com',
     githubUrl: 'https://github.com/danriley11/FullstackWebsite',
     description: 'A small business run by a talented mother who loves patchwork quilting.',
     previewImage: placeholderImage1,
