@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { GRAND_FOYER, HOUSEKEEPING, LEARNING, PLANNING, SHOWCASING } from '../../../routes/routes';
+import { GRAND_FOYER, HOUSEKEEPING, LEARNING, /*PLANNING,*/ SHOWCASING } from '../../../routes/routes';
 import { MenuIconContainer, XBar1, XBar2, XBar3 } from '../../menu/Menu.styles';
 import { MenuDropdownContainer, MenuDropdownItem } from '../../menu/MenuDropdown.styles';
 import { P } from '../../core/typography';
@@ -61,14 +61,14 @@ const NavigationMenu = () => {
             <P>Showcasing suite</P>
           </MenuDropdownItem>
 
-          <MenuDropdownItem
+          {/* <MenuDropdownItem
             isPath={pathMatch(PLANNING)}
             onClick={() => {
               toggleHamburger();
               navigate(PLANNING);
             }}>
             <P>Planning suite</P>
-          </MenuDropdownItem>
+          </MenuDropdownItem> */}
 
           <MenuDropdownItem
             isPath={pathMatch(HOUSEKEEPING)}
