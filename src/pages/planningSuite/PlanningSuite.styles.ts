@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { deepGreen, irisGreen, lightGrey, white } from '../../components/core/colours';
+import { hoverGreenLight, lightGrey, white } from '../../components/core/colours';
 import { rem } from '../../components/core/styles';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 import { fontSize16, fontSize16LineHeight } from '../../components/core/typography';
@@ -38,7 +38,7 @@ export const GridItem = styled.div<GridItemProps>`
   min-width: 104px;
   min-height: 104px;
   text-align: center;
-  background-color: ${irisGreen};
+  background-color: ${hoverGreenLight};
 
   ul {
     padding-left: 0;
@@ -48,7 +48,7 @@ export const GridItem = styled.div<GridItemProps>`
   ${({ isCurrentDay = false }) =>
     isCurrentDay &&
     `
-    background-color: ${deepGreen};
+    background-color: ${hoverGreenLight};
     color: ${white}
   `}
 `;

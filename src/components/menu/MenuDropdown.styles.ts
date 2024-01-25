@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { rem } from '../core/styles';
 import { MENU_DROPDOWN_Z_INDEX } from '../core/z-index';
-import { deepGreen, emeraldGreen, white, darkGrey, lightGrey } from '../core/colours';
+import { inactiveGreen, white, darkGrey, lightGrey, activeGreen, hoverGreenDark } from '../core/colours';
 
 export const MenuDropdownContainer = styled.div`
   position: absolute;
@@ -9,7 +9,7 @@ export const MenuDropdownContainer = styled.div`
   top: 100%;
   z-index: ${MENU_DROPDOWN_Z_INDEX};
   width: ${rem(200)};
-  background-color: ${emeraldGreen};
+  background-color: ${inactiveGreen};
   border: 1px solid ${lightGrey};
   overflow-y: auto;
   border-radius: ${rem(16)} 0 ${rem(16)} ${rem(16)};
@@ -28,7 +28,12 @@ export const MenuDropdownItem = styled.div<MenuItemProps>`
   cursor: pointer;
 
   &:hover {
-    background-color: ${deepGreen};
+    background-color: ${hoverGreenDark};
+    color: ${white};
+  }
+
+  &:active {
+    background-color: ${activeGreen};
     color: ${white};
   }
 

@@ -13,7 +13,7 @@ import { CenterAlign, Margin } from '../../components/core/spacing';
 import { FLOOR_PLAN_CONTENT, SPACE_INFO_CONTENT, ZONES_CONTENT } from './GrandFoyer.content';
 import { offWhite } from '../../components/core/colours';
 import { ButtonLink } from '../../components/buttons/Buttons.styles';
-import { PLANNING } from '../../routes/routes';
+// import { PLANNING } from '../../routes/routes';
 import { useNavigate } from 'react-router-dom';
 import { FlexDiv } from '../../components/blocks/FlexDiv.styles';
 import IntersectionWrapper from '../../components/inViewport/InView';
@@ -45,7 +45,8 @@ const GrandFoyer = () => {
                     ))}
                   </Margin>
                   <CenterAlign>
-                    <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink>
+                    {/* <ButtonLink onClick={() => navigate(PLANNING)}>Planning suite</ButtonLink> */}
+                    <ButtonLink disabled>Planning suite</ButtonLink>
                   </CenterAlign>
                 </>
               }

@@ -1,5 +1,15 @@
 import styled, { css } from 'styled-components';
-import { black, darkGrey, deepGreen, emeraldGreen, lightGrey, white } from '../core/colours';
+import {
+  activeGreen,
+  black,
+  darkGrey,
+  disabledGreen,
+  hoverGreenDark,
+  hoverGreenLight,
+  inactiveGreen,
+  textDarkGreen,
+  white,
+} from '../core/colours';
 import { rem } from '../core/styles';
 import { fontFamily, fontSize16, fontWeightSemiBold } from '../core/typography';
 
@@ -11,10 +21,10 @@ export const ButtonLink = styled.button<ButtonLinkProps>`
   display: flex;
   width: fit-content;
 
-  color: ${deepGreen};
-  background-color: ${emeraldGreen};
+  color: ${textDarkGreen};
+  background-color: ${inactiveGreen};
 
-  border: 1px solid ${deepGreen};
+  border: 1px solid ${textDarkGreen};
   border-radius: ${rem(24)};
 
   padding: ${rem(12)};
@@ -25,7 +35,15 @@ export const ButtonLink = styled.button<ButtonLinkProps>`
 
   &:hover {
     color: ${white};
-    background-color: ${deepGreen};
+    background-color: ${hoverGreenDark};
+    box-shadow: 0 0 16px ${hoverGreenLight};
+    cursor: pointer;
+  }
+
+  &:active {
+    color: ${white};
+    background-color: ${activeGreen};
+    box-shadow: 0 0 16px ${hoverGreenLight};
     cursor: pointer;
   }
 
@@ -33,7 +51,7 @@ export const ButtonLink = styled.button<ButtonLinkProps>`
     disabled &&
     css`
       color: ${darkGrey};
-      background-color: ${lightGrey};
+      background-color: ${disabledGreen};
       border: 1px solid ${black};
       pointer-events: none;
       text-decoration: line-through;

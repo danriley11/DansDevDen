@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { irisGreen } from '../core/colours';
+import { hoverGreenLight } from '../core/colours';
 import { rem } from '../core/styles';
 
 type FlexDivProps = {
@@ -26,7 +26,7 @@ export const FlexDiv = styled.div<FlexDivProps>`
     css`
       & div:hover {
         cursor: pointer;
-        background-color: ${irisGreen};
+        background-color: ${hoverGreenLight};
       }
     `}
 `;

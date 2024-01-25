@@ -9,13 +9,16 @@ export const white = 'RGBA(255, 255, 255, 1)';
 export const offWhite = 'RGBA(245, 245, 245, 1)';
 export const black = 'RGBA(0, 0, 0, 1)';
 
-export const emeraldGreen = `RGBA(80, 200, 120)`;
-export const irisGreen = `RGBA(89, 200, 126, 0.5)`;
-export const deepGreen = `RGBA(0, 85, 28)`;
-
-export const darkGreen = `RGBA(0, 67, 43)`;
-export const greenAccent1 = `RGBA(160, 190, 116)`;
 export const greenAccent2 = `RGBA(70, 143, 100)`;
-export const greenAccent3 = `RGBA(53, 123, 89)`;
 export const greenAccent4 = `RGBA(0, 81, 89)`;
 export const greenAccent5 = `RGBA(0, 81, 53)`;
+
+export const activeGreen = `RGB(0, 67, 43)`;
+export const hoverGreenDark = `RGBA(53, 123, 89)`;
+export const hoverGreenLight = `RGBA(89, 200, 126, 0.5)`;
+export const inactiveGreen = `RGB(80, 200, 120)`;
+export const disabledGreen = `rgb(144, 158, 146)`;
+
+export const textLightGreen = `rgb(89, 200, 126)`;
+export const textDarkGreen = `RGB(0, 85, 28)`;
+export const decorativeGreen = `rgb(14, 160, 78)`;
