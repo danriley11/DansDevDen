@@ -58,10 +58,11 @@ export const ZONES_CONTENT = [
     href: ``,
   },
   {
-    title: 'Planning suite',
+    title: 'Planning suite (coming soon)',
     image: PlanningImage,
     blurb: `Jump in here if you're interested in finding out what I'm currently working on or what I will be working on.`,
-    href: PLANNING,
+    // href: PLANNING,
+    href: '',
   },
   {
     title: 'Housekeepers lodge',
