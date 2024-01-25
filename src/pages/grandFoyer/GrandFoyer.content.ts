@@ -4,7 +4,7 @@ import ShowcasingImage from '../../assets/ShowcasingImage.webp';
 import ServicesImage from '../../assets/ServicesImage.jpg';
 import PlanningImage from '../../assets/PlanningImage.webp';
 import AboutMeImage from '../../assets/AboutMeImage.webp';
-import { HOUSEKEEPING, LEARNING, PLANNING, SHOWCASING } from '../../routes/routes';
+import { HOUSEKEEPING, LEARNING, SHOWCASING } from '../../routes/routes';
 
 export const SPACE_INFO_CONTENT = {
   title: `What is this space?`,

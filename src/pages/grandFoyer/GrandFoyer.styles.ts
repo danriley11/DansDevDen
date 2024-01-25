@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { Heading2 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-import { darkGrey, hoverGreenLight, lightGrey, offWhite, softGrey, textDarkGreen, white } from '../../components/core/colours';
+import { darkGrey, lightGrey, offWhite, softGrey, textDarkGreen, white } from '../../components/core/colours';
 
 export const GrandFoyerContainer = styled.div`
   background-image: url('../../assets/GrandFoyer.jpeg');

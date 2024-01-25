@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { activeGreen, textLightGreen, lightGrey, textDarkGreen, hoverGreenLight, inactiveGreen } from '../../core/colours';
+import { activeGreen, textLightGreen, lightGrey, hoverGreenLight, inactiveGreen } from '../../core/colours';
 import { mediaUp, rem } from '../../core/styles';
 
 export const FooterContainer = styled.div`
