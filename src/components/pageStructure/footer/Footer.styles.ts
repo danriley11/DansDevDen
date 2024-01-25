@@ -1,20 +1,21 @@
 import styled from 'styled-components';
-import { darkGreen, greenAccent1, greenAccent2, lightGrey } from '../../core/colours';
+import { activeGreen, textLightGreen, lightGrey, textDarkGreen, hoverGreenLight, inactiveGreen } from '../../core/colours';
 import { mediaUp, rem } from '../../core/styles';
 
 export const FooterContainer = styled.div`
   position: relative;
   overflow-x: hidden;
   padding: 0 ${rem(30)};
-  background-color: ${darkGreen};
-  box-shadow: 0 0 ${rem(32)} ${darkGreen};
+  background-color: ${activeGreen};
+  box-shadow: 0 0 ${rem(32)} ${activeGreen};
 
   h4 {
-    color: ${greenAccent1};
+    color: ${textLightGreen};
     margin-bottom: ${rem(12)};
   }
+
   p {
-    color: ${greenAccent2};
+    color: ${textLightGreen};
   }
 
   .footer-top {
@@ -26,12 +27,21 @@ export const FooterContainer = styled.div`
     a {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      color: ${greenAccent2};
+      color: ${inactiveGreen};
       text-decoration: none;
+      padding: 4px;
+      border-radius: 12px;
 
       &:hover {
         cursor: pointer;
-        color: ${greenAccent1};
+        color: ${hoverGreenLight};
+        box-shadow: 0 0 4px ${hoverGreenLight};
+      }
+
+      &:active {
+        cursor: pointer;
+        color: ${activeGreen};
+        background-color: ${textLightGreen};
       }
     }
 
@@ -49,6 +59,13 @@ export const FooterContainer = styled.div`
       &:hover {
         color: grey;
         cursor: not-allowed;
+        box-shadow: none;
+      }
+
+      &:active {
+        color: grey;
+        cursor: not-allowed;
+        box-shadow: none;
       }
     }
 

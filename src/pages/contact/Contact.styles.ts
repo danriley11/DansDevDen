@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import { darkGreen, greenAccent1 } from '../../components/core/colours';
+import { textLightGreen, textDarkGreen } from '../../components/core/colours';
 import { CenterAlign } from '../../components/core/spacing';
 
 const ContactWrapper = styled.div`
-  background-color: ${greenAccent1};
-  color: ${darkGreen};
-
+  background-color: ${textLightGreen};
+  color: ${textDarkGreen};
   padding: 24px;
   border-radius: 24px;
 `;
 
 export const ContactNote = styled(CenterAlign)`
-  filter: opacity(60%);
+  filter: opacity(80%);
 `;
 
 export default ContactWrapper;

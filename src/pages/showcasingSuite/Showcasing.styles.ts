@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mediaUp, rem } from '../../components/core/styles';
-import { deepGreen, softGrey } from '../../components/core/colours';
+import { hoverGreenLight, softGrey } from '../../components/core/colours';
 
 export const ShowcasingContainer = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const ShowcasingBlockImg = styled.img`
   object-fit: cover;
   border-radius: ${rem(8)};
   border: 1px solid ${softGrey};
-  box-shadow: 0 0 50px ${deepGreen};
+  box-shadow: 0 0 50px ${hoverGreenLight};
 `;
 
 export const ShowcasingBlockContent = styled.div`

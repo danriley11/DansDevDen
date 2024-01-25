@@ -1,14 +1,7 @@
 import { styled } from 'styled-components';
 import { Heading2 } from '../../components/core/typography';
 import { mediaUp, rem } from '../../components/core/styles';
-import {
-  darkGrey,
-  deepGreen,
-  lightGrey,
-  offWhite,
-  softGrey,
-  white,
-} from '../../components/core/colours';
+import { darkGrey, hoverGreenLight, lightGrey, offWhite, softGrey, textDarkGreen, white } from '../../components/core/colours';
 
 export const GrandFoyerContainer = styled.div`
   background-image: url('../../assets/GrandFoyer.jpeg');
@@ -79,14 +72,14 @@ export const GrandFoyerContentContainer = styled.div<{ backgroundColour: string 
   background-color: ${({ backgroundColour }) => backgroundColour};
 
   h2 {
-    color: ${deepGreen};
+    color: ${textDarkGreen};
     text-align: center;
     font-size: ${rem(48)};
     line-height: ${rem(48)};
   }
 
   & > div > div > h3 {
-    color: ${deepGreen};
+    color: ${textDarkGreen};
   }
 `;
 

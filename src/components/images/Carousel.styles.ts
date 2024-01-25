@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { irisGreen, emeraldGreen } from '../core/colours';
+import { hoverGreenLight, inactiveGreen } from '../core/colours';
 import { mediaUp } from '../core/styles';
 
 export const CarouselWrapper = styled.div`
@@ -76,17 +76,17 @@ export const CarouselButton = styled.button<CarouselButtonProps>`
   transform: translate(0, -50%);
   border: none;
   height: 100%;
-  background-color: ${irisGreen};
+  background-color: ${hoverGreenLight};
   z-index: 1;
 
   ${({ leftSide = false }) => (leftSide ? `left: 0` : `right: 0`)};
 
   &:hover {
-    background-color: ${irisGreen};
+    background-color: ${hoverGreenLight};
     cursor: pointer;
   }
 
   &:active {
-    background-color: ${emeraldGreen};
+    background-color: ${inactiveGreen};
   }
 `;
