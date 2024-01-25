@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { GRAND_FOYER, HOUSEKEEPING, LEARNING, PLANNING, SHOWCASING } from './routes/routes';
+import { CONTACT, GRAND_FOYER, HOUSEKEEPING, LEARNING, PLANNING, SHOWCASING } from './routes/routes';
 import { Suspense, lazy } from 'react';
 import DefaultRouteWrapper from './routes/RouteWrappers';
 import ScrollToTop from './routes/ScrollToTop';
@@ -10,6 +10,7 @@ const LearningSuite = lazy(() => import('./pages/learningSuite/LearningSuite'));
 const ShowcasingSuite = lazy(() => import('./pages/showcasingSuite/ShowcasingSuite'));
 const PlanningSuite = lazy(() => import('./pages/planningSuite/PlanningSuite'));
 const Housekeeping = lazy(() => import('./pages/housekeepersLodge/HousekeepersLodge'));
+const Contact = lazy(() => import('./pages/contact/Contact'));
 
 function App() {
   return (
@@ -58,6 +59,15 @@ function App() {
             element={
               <DefaultRouteWrapper>
                 <Housekeeping />
+              </DefaultRouteWrapper>
+            }
+          />
+
+          <Route
+            path={CONTACT}
+            element={
+              <DefaultRouteWrapper>
+                <Contact />
               </DefaultRouteWrapper>
             }
           />

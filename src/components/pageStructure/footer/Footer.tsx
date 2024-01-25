@@ -7,6 +7,7 @@ import ButtonTab from '../../buttons/ButtonTab';
 import GitHubLogo from '../../../assets/GitHubLogo.png';
 import LinkedInLogo from '../../../assets/LinkedInLogo.png';
 import ResumeIcon from '../../../assets/ResumeIcon.png';
+import { CONTACT } from '../../../routes/routes';
 
 const Footer = () => {
   return (
@@ -14,13 +15,12 @@ const Footer = () => {
       <footer className="footer-top">
         <Container>
           <Heading4>Daniel Riley</Heading4>
+          <Link to={CONTACT}>Contact Me</Link>
           <Link to="" aria-disabled>
             Testimonies
           </Link>
-          <Link to="" aria-disabled>
-            Contact Me
-          </Link>
         </Container>
+
         <Container>
           <Heading4>Resources</Heading4>
           <Link to="" aria-disabled>
@@ -30,6 +30,7 @@ const Footer = () => {
             Attributions
           </Link>
         </Container>
+
         <Container>
           <Heading4>Socials</Heading4>
           <div className="footer-socials">
@@ -45,6 +46,7 @@ const Footer = () => {
           </div>
         </Container>
       </footer>
+
       <footer className="footer-bottom">
         <Container>
           <P>© {dayjs().year()} Dans Dev Den - All rights reserved</P>
