@@ -4,7 +4,7 @@ import ShowcasingImage from '../../assets/ShowcasingImage.webp';
 import ServicesImage from '../../assets/ServicesImage.jpg';
 import PlanningImage from '../../assets/PlanningImage.webp';
 import AboutMeImage from '../../assets/AboutMeImage.webp';
-import { HOUSEKEEPING, LEARNING, SHOWCASING } from '../../routes/routes';
+import { HOUSEKEEPING, LEARNING, SERVICES, SHOWCASING } from '../../routes/routes';
 
 export const SPACE_INFO_CONTENT = {
   title: `What is this space?`,
@@ -52,10 +52,10 @@ export const ZONES_CONTENT = [
     href: SHOWCASING,
   },
   {
-    title: 'Services suite (coming soon)',
+    title: 'Services suite',
     image: ServicesImage,
     blurb: `I love what I do and I do what I love. It's important to me that I share the magic of IT with the world, so in my spare time I'd like to offer a variety of services to help the community.`,
-    href: ``,
+    href: SERVICES,
   },
   {
     title: 'Planning suite (coming soon)',
