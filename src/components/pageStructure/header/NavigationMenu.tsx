@@ -71,21 +71,21 @@ const NavigationMenu = () => {
           </MenuDropdownItem> */}
 
           <MenuDropdownItem
-            isPath={pathMatch(HOUSEKEEPING)}
-            onClick={() => {
-              toggleHamburger();
-              navigate(HOUSEKEEPING);
-            }}>
-            <P>Housekeepers lodge</P>
-          </MenuDropdownItem>
-
-          <MenuDropdownItem
             isPath={pathMatch(SERVICES)}
             onClick={() => {
               toggleHamburger();
               navigate(SERVICES);
             }}>
             <P>Services suite</P>
+          </MenuDropdownItem>
+
+          <MenuDropdownItem
+            isPath={pathMatch(HOUSEKEEPING)}
+            onClick={() => {
+              toggleHamburger();
+              navigate(HOUSEKEEPING);
+            }}>
+            <P>Housekeepers lodge</P>
           </MenuDropdownItem>
         </MenuDropdownContainer>
       )}
