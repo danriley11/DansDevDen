@@ -1,7 +1,8 @@
 import { CenterAlign, Margin } from '../../components/core/spacing';
-import { Heading1, Heading2, P } from '../../components/core/typography';
+import { Heading2, P } from '../../components/core/typography';
 import { Container } from '../../components/pageStructure/Container.styles';
 import { NavBacking } from '../../components/pageStructure/header/Navbar.styles';
+import { PageHeader } from '../../components/pageStructure/header/PageHeading.styles';
 import ContactWrapper, { ContactNote } from './Contact.styles';
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
       <NavBacking />
 
       <Margin top={48} bottom={48}>
-        <Heading1>Contact Dan</Heading1>
+        <PageHeader>Contact Dan</PageHeader>
 
         <ContactWrapper>
           <Heading2>First time consultations / Office hours:</Heading2>
