@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { hoverGreenLight, textDarkGreen, white } from '../../components/core/colours';
-import { rem } from '../../components/core/styles';
+import { mediaUp, rem } from '../../components/core/styles';
 
 const ServicesSuiteWrapper = styled.div`
   color: ${textDarkGreen};
@@ -12,8 +12,11 @@ type ServiceContentProps = {
 };
 
 export const ServiceContent = styled.div<ServiceContentProps>`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: ${rem(16)};
-  margin-bottom: ${rem(48)};
   border-radius: ${rem(24)};
   border: 1px solid ${textDarkGreen};
   position: relative;
@@ -51,6 +54,21 @@ export const ServiceContent = styled.div<ServiceContentProps>`
   &:hover:before {
     opacity: 0.7;
   }
+`;
+
+export const ServiceWrapper = styled.div`
+  display: grid;
+  gap: 24px;
+  margin-bottom: 48px;
+
+  ${mediaUp.md`
+    grid-template-columns: 1fr 1fr;
+
+    a {
+      width: auto;
+      justify-content: center;
+    }
+  `}
 `;
 
 export default ServicesSuiteWrapper;

@@ -19,6 +19,16 @@ const SERVICES_LIST: SERVICES_LIST_TYPE[] = [
     popular: true,
   },
   {
+    title: 'Website Support',
+    descriptions: [
+      `Uncertain about your website's behavior? Experiencing issues or slow loading times?`,
+      ` I'm here to investigate and resolve any problems. If I can't identify the root cause or provide a solution, rest assured, you get your money back guaranteed.`,
+    ],
+    email: `mailto:dan_riley7@outlook.com?subject=Website Support`,
+    available: true,
+    popular: false,
+  },
+  {
     title: 'Website Construction (Content only)',
     descriptions: [
       `Creating an online presence for your business?`,
@@ -55,16 +65,6 @@ const SERVICES_LIST: SERVICES_LIST_TYPE[] = [
       `If you want to move away from platforms like Wix, Wordpress, or Squarespace, this service is tailored for you. Experience a rebuild using cutting-edge technologies for both frontend and backend, along with scalable hosting options like AWS.`,
     ],
     email: `mailto:dan_riley7@outlook.com?subject=Website Rebuild (BYO website)`,
-    available: true,
-    popular: false,
-  },
-  {
-    title: 'Website Support',
-    descriptions: [
-      `Uncertain about your website's behavior? Experiencing issues or slow loading times?`,
-      ` I'm here to investigate and resolve any problems. If I can't identify the root cause or provide a solution, rest assured, you get your money back guaranteed.`,
-    ],
-    email: `mailto:dan_riley7@outlook.com?subject=Website Support`,
     available: true,
     popular: false,
   },
