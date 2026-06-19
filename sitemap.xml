@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+    <!-- Grand Foyer (Homepage) -->
+    <url>
+        <loc>https://dansdevden.com/</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Showcasing Suite -->
+    <url>
+        <loc>https://dansdevden.com/showcasing-suite</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Services Suite -->
+    <url>
+        <loc>https://dansdevden.com/services-suite</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Planning Suite -->
+    <url>
+        <loc>https://dansdevden.com/planning-suite</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Learning Suite -->
+    <url>
+        <loc>https://dansdevden.com/learning-suite</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://dansdevden.com/contact</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Housekeepers Lodge (internal/utility — lower priority) -->
+    <url>
+        <loc>https://dansdevden.com/housekeepers-lodge</loc>
+        <lastmod>2026-06-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+</urlset>

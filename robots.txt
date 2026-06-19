@@ -1,0 +1,115 @@
+# robots.txt for https://dansdevden.com
+# Updated: 2026-06-19
+
+# -----------------------------------------------
+# Allow ALL crawlers and bots (browsers + AI)
+# -----------------------------------------------
+User-agent: *
+Allow: /
+
+# -----------------------------------------------
+# AI & LLM crawlers — explicitly allowed
+# -----------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: GoogleExtendedBot
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: TurnitinBot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: MistralAI
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# -----------------------------------------------
+# Standard search engine crawlers
+# -----------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# -----------------------------------------------
+# Sitemap location
+# -----------------------------------------------
+Sitemap: https://dansdevden.com/sitemap.xml
